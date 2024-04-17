@@ -1,0 +1,64 @@
+.navbar  {
+        height: 4.5rem;
+        width: 100vw;
+        margin: 0 auto;
+        padding: 1rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        z-index: 3;
+        background-color: rgb(201, 238, 21);
+        color: rgb(0, 0, 0);
+        font-family: "BIZ UDPGothic", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+}
+
+.navbar .menuIcon {
+    object-fit: cover;
+    height: 1.9rem;
+    margin-right: 2rem;
+}
+
+.logoTxt {
+    font-family: "BIZ UDPGothic", sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.navBurgerMenu {
+    display: flex;
+}
+
+.navBurgerMenu:hover {
+    cursor: pointer;
+}
+
+.pageLinks {
+    display: flex;
+    margin: 0.2rem;
+    margin-right: -100%; /* Initially, move off-screen to the right */
+    transition: margin-right 0.5s ease-in-out; 
+}
+
+
+.pageLinks.show {
+    display: flex;
+    margin-right: 2rem;
+  }
+
+.pageLink {
+    font-family: "BIZ UDPGothic", sans-serif;
+    font-weight: 400;
+    margin-right: 2rem;
+    transition: all 0.3s ease;
+    font-size: 1.25rem;
+}
+
+.pageLink:hover {
+    color:rgb(84, 84, 84);
+    text-decoration-line: underline;
+}
+

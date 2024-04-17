@@ -1,0 +1,38 @@
+.services {
+    background-color: rgb(201, 238, 21);
+    color: black;
+}
+
+.servicesBGImg{
+    object-fit: contain;
+    overflow: hidden;
+    position: absolute;
+    opacity: 50%;
+    height: 40rem;
+    width: 100vw;
+}
+
+.servicesHead {
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+.servicesHeadline {
+    font-family: "BIZ UDPGothic", sans-serif;;
+}
+.servicesHeadline2 {
+    margin-top: 0.75rem;
+    font-family: "BIZ UDPGothic", sans-serif;;
+}
+
+.serviceLower {
+    padding: 2rem 0 6rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.service {
+    font-size: 1.75rem;
+    padding-top: 4rem;
+    font-family: "BIZ UDPGothic", sans-serif;;
+}

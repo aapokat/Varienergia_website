@@ -1,0 +1,20 @@
+Värit
+harmaa rgb(84, 84, 84)
+lime rgb(201, 238, 21)
+
+fontit
+.class {
+  font-family: "BIZ UDPGothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.class {
+  font-family: "BIZ UDPGothic", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+Iconit
+uxwing.com

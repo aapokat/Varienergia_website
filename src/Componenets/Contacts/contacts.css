@@ -1,0 +1,32 @@
+.contact {
+    text-align: center;
+    background-color: rgb(84, 84, 84);
+}
+
+.contactsHeadline {
+    font-family: "BIZ UDPGothic", sans-serif;
+    font-size: 4.5rem;
+    margin-top: 5rem;
+}
+
+.contactsSctns {
+    display: flex;
+    justify-content: space-around;
+    margin: 5rem;
+}
+
+.contactImg {
+    height: 30rem;
+}
+
+.middleLine {
+    background-color: rgb(201, 238, 21);
+    width: 0.3rem;
+    border-radius: 10rem;
+}
+
+.NameSctn {
+    margin-top: 3rem;
+    font-size: 1.75em;
+    font-family: "BIZ UDPGothic", sans-serif;
+}

@@ -1,0 +1,59 @@
+.popUp {
+    text-align: center;
+    position: fixed;
+    height: 43vw;
+    width: 90vw;
+    border-radius: 2rem;
+    background-color: rgba(202, 238, 21, 0.833);
+    z-index: 3;
+    color: black;
+    margin: 1rem 0 0 5rem;
+    font-size: 2rem;
+    font-family: "BIZ UDPGothic", sans-serif;
+    padding: 2rem 10rem 0 10rem;
+    transition: 'top 0.3s ease-in-out'
+}
+
+.popUp:hover {
+    cursor: pointer;
+}
+
+.popUpHeadline {
+    margin-bottom: 2rem;
+}
+
+
+.cntrLanding{
+    display: flex;
+    justify-content: center;
+}
+
+.landingImg {
+    object-fit: contain;
+    width: 100vw;
+    
+}
+
+.overlayContent {
+    position: absolute;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.overlayImg1 {
+    object-fit: cover;
+    position: absolute;
+    height: 25rem;
+    margin-left: 0.4rem;
+}
+.overlayImg2 {
+    object-fit: cover;
+    height: 25.4rem;
+}
+
+.overlayTxt {
+    font-family: "BIZ UDPGothic", sans-serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+    text-shadow: 2rem black;
+}
