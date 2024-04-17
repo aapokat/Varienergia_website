@@ -14,8 +14,12 @@
     transition: 'top 0.3s ease-in-out'
 }
 
-.popUp:hover {
-    cursor: pointer;
+.popUpBtn {
+    margin-top: 3rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    border-style: solid;
+    border-color: black;
 }
 
 .popUpHeadline {
