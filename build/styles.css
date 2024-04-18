@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: transparent;
+    font-family: 'Inconsolata', sans-serif;
+}
+
+body {
+    background: rgb(84, 84, 84);
+    color: rgb(201, 238, 21);
+    overflow: hidden;
+    overflow-y: scroll;
+}
+html {
+    scroll-behavior: smooth;
+}
