@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.4477bf06.css",
-    "main.js": "/static/js/main.6fe2b606.js",
+    "main.css": "/static/css/main.04c1d98c.css",
+    "main.js": "/static/js/main.ec17cde9.js",
     "static/media/MaaliPensseli2.png": "/static/media/MaaliPensseli2.f98edc4997b6ba00c4cb.png",
     "static/media/landingImg.png": "/static/media/landingImg.93fc8af24d23801760d2.png",
     "static/media/WhiteImgLogo.png": "/static/media/WhiteImgLogo.e71b5c7a26a1f75e6598.png",
     "static/media/JuhoKuva.jpg": "/static/media/JuhoKuva.c5b90bbf50efaa7541fd.jpg",
     "static/media/TeppoKuva.jpg": "/static/media/TeppoKuva.211124610df216ea5e24.jpg",
+    "static/media/phoneIcon.png": "/static/media/phoneIcon.faa2dbd3379fbd76eced.png",
     "index.html": "/index.html",
-    "main.4477bf06.css.map": "/static/css/main.4477bf06.css.map",
-    "main.6fe2b606.js.map": "/static/js/main.6fe2b606.js.map"
+    "main.04c1d98c.css.map": "/static/css/main.04c1d98c.css.map",
+    "main.ec17cde9.js.map": "/static/js/main.ec17cde9.js.map"
   },
   "entrypoints": [
-    "static/css/main.4477bf06.css",
-    "static/js/main.6fe2b606.js"
+    "static/css/main.04c1d98c.css",
+    "static/js/main.ec17cde9.js"
   ]
 }

@@ -1,7 +1,7 @@
 
 import React from "react";
-
 import Navbar from '../../Componenets/navbar/navbar';
+import FloatBtn from '../../Componenets/FloatBtn/FloatBtn';
 import Landing from '../../Componenets/landing/landing';
 import About from '../../Componenets/About/About';
 import Services from "../../Componenets/Services/Services";
@@ -13,12 +13,13 @@ const Home = () => {
  
   return (
     <>
-      <Navbar />
+      <Navbar id="contacts-section"/>
+      <FloatBtn/>
       <Landing id="landing-section" />
       <About id="about-section" />
-      <Services/>
+      <Services id="services-section"/>
       <Contacts id="contacts-section" />
-      <Footer />
+      <Footer id="footer-section"/>
     </>
   );
 }

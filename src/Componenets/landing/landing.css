@@ -1,3 +1,7 @@
+.landing {
+    margin-top: 4rem;
+}
+
 .popUp {
     text-align: center;
     position: fixed;
@@ -47,17 +51,18 @@
 .overlayImg1 {
     object-fit: cover;
     position: absolute;
-    height: 25rem;
-    margin-left: 0.4rem;
+    height: 30vw;
+    margin-top: 0.4rem;
+    margin-left: 0.58rem;
 }
 .overlayImg2 {
     object-fit: cover;
-    height: 25.4rem;
+    height: 30vw;
 }
 
 .overlayTxt {
     font-family: "BIZ UDPGothic", sans-serif;
     font-weight: 700;
-    font-size: 3.5rem;
-    text-shadow: 2rem black;
+    font-size: 5vw;
+    
 }

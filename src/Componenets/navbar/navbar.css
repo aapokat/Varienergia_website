@@ -6,15 +6,26 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        position: sticky;
+        position: fixed;
         top: 0;
-        z-index: 3;
+        left: 0;
+        top: 0;
+        z-index: 1000;
+        transform: transform 0.3s ease-in-out;
         background-color: rgb(201, 238, 21);
         color: rgb(0, 0, 0);
         font-family: "BIZ UDPGothic", sans-serif;
         font-weight: 400;
         font-style: normal;
 }
+
+.navVisible {
+    transform: translateY(0);
+  }
+  
+.navHidden {
+    transform: translateY(-100%);
+  }
 
 .navbar .menuIcon {
     object-fit: cover;

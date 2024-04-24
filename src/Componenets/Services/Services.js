@@ -4,7 +4,7 @@ import servicesBGImg from '../Assets/images/MaaliPensseli2.png';
 
 const Services = () => {
     return (  
-        <div className="services">
+        <div className="services" id="services-section">
             <div className="servicesHead">
                 <h1 className="servicesHeadline">Miten toimimme</h1>
                 <h2 className="servicesHeadline2">Työnvaiheet:</h2>
