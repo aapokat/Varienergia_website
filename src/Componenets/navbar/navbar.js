@@ -26,7 +26,7 @@ const Navbar = () => {
   }, [prevScrollPos]);
 
   const toggleMenu = () => {
-    setShowLinks(!showLinks);
+    setShowLinks(!showLinks); // Toggle the state to show/hide links
   };
 
   const closeMenu = () => {
@@ -34,58 +34,59 @@ const Navbar = () => {
   };
 
   return (
-    <div className={`navbar ${visible ? "navVisible" : "navHidden"}`}>
+    <div className="navbar">
       <div className="navLogo">
         <p className="logoTxt">Väri Energia</p>
       </div>
-      <div className="navBurgerMenu">
-        <div className={`pageLinks ${showLinks ? 'show' : ''}`}>
-          <Link
-            className="pageLink"
-            to="landing-section"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            onClick={closeMenu}
-          >
-            Landing
-          </Link>
-          <Link
-            className="pageLink"
-            to="about-section"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            onClick={closeMenu}
-          >
-            About
-          </Link>
-          <Link
-            className="pageLink"
-            to="services-section"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            onClick={closeMenu}
-          >
-            Services
-          </Link>
-          <Link
-            className="pageLink"
-            to="contacts-section"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            onClick={closeMenu}
-          >
-            Contacts
-          </Link>
-        </div>
-        <img className="menuIcon" src={menu_icon} alt="menu_icon" onClick={toggleMenu} />
+      <div className="navBurgerMenu" onClick={toggleMenu}>
+        <img className="menuIcon" src={menu_icon} alt="menu_icon" />
+      </div>
+      {/* Conditionally render links based on showLinks state */}
+      <div className={`pageLinks ${showLinks ? 'show' : ''}`}>
+        <Link
+          className="pageLink"
+          to="landing-section"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          onClick={() => setShowLinks(false)} // Close menu when link is clicked
+        >
+          Landing
+        </Link>
+        <Link
+          className="pageLink"
+          to="about-section"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          onClick={() => setShowLinks(false)}
+        >
+          About
+        </Link>
+        <Link
+          className="pageLink"
+          to="services-section"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          onClick={() => setShowLinks(false)}
+        >
+          Services
+        </Link>
+        <Link
+          className="pageLink"
+          to="contacts-section"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          onClick={() => setShowLinks(false)}
+        >
+          Contacts
+        </Link>
       </div>
     </div>
   );

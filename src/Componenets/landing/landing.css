@@ -1,5 +1,6 @@
 .landing {
-    margin-top: 4rem;
+    margin-top: 5vw;
+    width: 100vw;
 }
 
 .popUp {
@@ -38,7 +39,7 @@
 
 .landingImg {
     object-fit: contain;
-    width: 100vw;
+    width: 100%;
     
 }
 

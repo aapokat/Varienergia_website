@@ -1,3 +1,7 @@
+.about {
+   width: 100vw;
+}
+
 .firstSection {
     margin-top: 2rem;
     text-align: center;
@@ -11,6 +15,7 @@
 .aboutTxt {
     margin-top: 1rem;
     font-size: 1.9rem;
+    margin: 0 6rem;
     font-family: "BIZ UDPGothic", sans-serif;
 }
 
@@ -79,4 +84,23 @@
 
 .houseImg {
     max-height: 22.5rem;
+}
+
+@media (max-width:1200px) {
+    .aboutTxt {
+        text-align: center;
+        margin: 0;
+        font-size: 1.2rem;
+    }
+
+    .infoSection {
+        display: grid;
+        margin-bottom: 1.5rem;
+    }
+    .infoImg {
+        margin-bottom: 3rem;
+    }
+    .houseImgSection {
+        display: none;
+    }
 }

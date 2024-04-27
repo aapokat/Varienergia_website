@@ -15,10 +15,10 @@ const About = () => {
                 <img src="" alt="" className="headlineImg1" />
                 <img src="" alt="" className="headlineImg2" />
                 <p className="aboutTxt">
-                    Väri Energia Oy on kahden nuoren miehenperustama maalausyritys. <br />
-                        Olemme erikoistuneet talon ulkoverhouksienmaalauksiin, <br />
-                            Haluamme tehdä talonmaalauksesta sinulle <br />
-                                vaivattoman ja helponkokemuksen. 
+                    Väri Energia Oy on kahden nuoren miehen perustama maalausyritys.
+                    Olemme erikoistuneet talon ulkoverhouksienmaalauksiin,
+                    Haluamme tehdä talonmaalauksesta sinulle
+                    vaivattoman ja helpon kokemuksen. 
                 </p>
             </div>
             <div className="secondSection">

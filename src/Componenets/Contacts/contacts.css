@@ -5,7 +5,7 @@
 
 .contactsHeadline {
     font-family: "BIZ UDPGothic", sans-serif;
-    font-size: 4.5rem;
+    font-size: 2rem;
     margin-top: 5rem;
 }
 
@@ -29,4 +29,15 @@
     margin-top: 3rem;
     font-size: 1.75em;
     font-family: "BIZ UDPGothic", sans-serif;
+}
+
+@media (max-width:1200px) {
+    .contactsSctns {
+        display: grid;
+        margin: 0;
+    }
+
+    .middleLine {
+        display: none;
+    }
 }

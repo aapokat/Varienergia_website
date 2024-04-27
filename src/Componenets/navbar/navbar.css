@@ -1,22 +1,21 @@
 .navbar  {
-        height: 4.5rem;
-        width: 100vw;
-        margin: 0 auto;
-        padding: 1rem 2rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        position: fixed;
-        top: 0;
-        left: 0;
-        top: 0;
-        z-index: 1000;
-        transform: transform 0.3s ease-in-out;
-        background-color: rgb(201, 238, 21);
-        color: rgb(0, 0, 0);
-        font-family: "BIZ UDPGothic", sans-serif;
-        font-weight: 400;
-        font-style: normal;
+    height: 5vw;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgb(201, 238, 21);
+    color: rgb(0, 0, 0);
+    font-family: "BIZ UDPGothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    transition: transform 0.3s ease-in-out;
 }
 
 .navVisible {
@@ -29,14 +28,15 @@
 
 .navbar .menuIcon {
     object-fit: cover;
-    height: 1.9rem;
+    height: 3.5vw;
     margin-right: 2rem;
+    cursor: pointer;
 }
 
 .logoTxt {
     font-family: "BIZ UDPGothic", sans-serif;
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 3vw;
 }
 
 .navBurgerMenu {
@@ -48,24 +48,30 @@
 }
 
 .pageLinks {
-    display: flex;
-    margin: 0.2rem;
-    margin-right: -100%; /* Initially, move off-screen to the right */
-    transition: margin-right 0.5s ease-in-out; 
+    display: none;
+    margin-right: 2rem; 
 }
 
 
 .pageLinks.show {
-    display: flex;
-    margin-right: 2rem;
+    display: flex; /* Show the links when .show class is applied */
+    flex-direction: column; /* Stack links vertically */
+    position: absolute;
+    top: 5.5rem; /* Position below the navbar */
+    right: 2rem; /* Align to the right of the menu icon */
+    background-color: rgb(201, 238, 21); /* Match navbar background */
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
 .pageLink {
     font-family: "BIZ UDPGothic", sans-serif;
     font-weight: 400;
-    margin-right: 2rem;
-    transition: all 0.3s ease;
     font-size: 1.25rem;
+    margin-bottom: 1rem; /* Add spacing between links */
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .pageLink:hover {
