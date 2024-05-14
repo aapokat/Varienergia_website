@@ -1,0 +1,67 @@
+.contact {
+    margin: 10rem 0;
+}
+
+p {
+    font-family: "BIZ UDPGothic", sans-serif;
+}
+
+h1 {
+    font-family: "BIZ UDPGothic", sans-serif;
+}
+
+.downSctn {
+    display: flex;
+    justify-content: space-around;
+    margin: 3rem 2rem;
+    
+}
+
+.contactForm {
+    text-align: left;
+}
+
+.inputBox {
+    height: 2.5rem;
+    width: 17rem;
+    padding-left: 1.5rem;
+    font-size: 1.1rem;
+    color: rgb(0, 0, 0);
+    border: solid 0.1rem rgba(117, 116, 116, 0.685);
+    background-color: rgb(226, 225, 225);
+    border-radius: 1rem;
+    box-shadow: 0.1rem 0.5rem 1rem rgba(0, 0, 0, 0.788);
+}
+
+#email {
+    width: 20rem;
+}
+
+#infoBox {
+    margin-top: 0.6rem;
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    color: rgb(0, 0, 0);
+    border: solid 0.1rem rgba(117, 116, 116, 0.685);
+    background-color: rgb(226, 225, 225);
+    border-radius: 1rem;
+    box-shadow: 0.1rem 0.5rem 1rem rgba(0, 0, 0, 0.788);
+    max-width: 50rem;
+    min-width: 20rem;
+    max-height: 50rem;
+}
+
+.formTxt {
+    font-size: 1.3rem;
+    margin: 1.2rem 0 0.5rem 0.1rem;
+}
+
+.callSctn {
+    text-align: left ;
+}
+
+.contactImg {
+    object-fit: contain;
+    max-height: 20vw;
+   
+}

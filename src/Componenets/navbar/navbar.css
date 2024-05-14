@@ -16,6 +16,7 @@
     font-weight: 400;
     font-style: normal;
     transition: transform 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.247) 0rem 0.5rem 2em;
 }
 
 .navVisible {

@@ -1,0 +1,66 @@
+.footer {
+    font-family: "BIZ UDPGothic", sans-serif;
+    color: black;
+}
+
+p {
+    font-family: "BIZ UDPGothic", sans-serif;
+}
+
+.someRow {
+    background-color: rgba(202, 238, 21, 0.941);
+    display: flex;
+    justify-content: end;
+    padding: 0.25rem 2.25rem 0.25rem 2.25rem;
+    font-family: "BIZ UDPGothic", sans-serif;
+}
+
+.fbImg {
+   margin: 0.5rem 3rem 0.5rem 3rem; 
+}
+.igImg {
+    margin: 0.5rem 3rem 0.5rem 3rem; 
+ }
+
+.pystyRivit {
+    padding: 1.5rem 0;
+    background-color: rgb(201, 238, 21);
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.4rem;
+    font-family: "BIZ UDPGothic", sans-serif;
+}
+
+.footerLogo {
+    object-fit: contain;
+    height: 4.5rem;
+}
+
+.footerName {
+    font-weight: 700;
+}
+
+.rowHead {
+    margin-bottom: 0.75rem;
+    font-family: "BIZ UDPGothic", sans-serif;
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
+}
+
+.footerNav {
+    display: grid;
+}
+
+.Link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
+}
+
+.rights {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem 0.5rem 3rem;
+    background-color: rgba(202, 238, 21, 0.692);
+    font-family: "BIZ UDPGothic", sans-serif;
+}

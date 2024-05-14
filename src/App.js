@@ -6,6 +6,7 @@ import Kayttoehdot from './pages/Kayttoehdot/kayttoehdotPage';
 import Tietosuojakaytanto from './pages/Tietosuojakaytanto/tietosuojakaytantoPage';
 import NotFound from './pages/Notfound/404Page';
 import Lomake from './pages/Lomake/LomakePage';
+import ContactPage from './pages/Contact/ContactPage';
 
 
 function App() {
@@ -17,6 +18,10 @@ function App() {
           element={<Home/>}
         />
         <Route path='*' element={<NotFound />} />
+        <Route
+          path='/Contact'
+          element={<ContactPage/>}
+        />
         <Route
           path='/KayttoehdotPage'
           element={<Lomake/>}

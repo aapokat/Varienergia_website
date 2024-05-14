@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.565f6310.css",
-    "main.js": "/static/js/main.e6249279.js",
+    "main.css": "/static/css/main.a261652e.css",
+    "main.js": "/static/js/main.3b8400ed.js",
     "static/media/MaaliPensseli2.png": "/static/media/MaaliPensseli2.f98edc4997b6ba00c4cb.png",
     "static/media/landingImg.png": "/static/media/landingImg.93fc8af24d23801760d2.png",
     "static/media/WhiteImgLogo.png": "/static/media/WhiteImgLogo.e71b5c7a26a1f75e6598.png",
@@ -9,11 +9,11 @@
     "static/media/TeppoKuva.jpg": "/static/media/TeppoKuva.211124610df216ea5e24.jpg",
     "static/media/phoneIcon.png": "/static/media/phoneIcon.faa2dbd3379fbd76eced.png",
     "index.html": "/index.html",
-    "main.565f6310.css.map": "/static/css/main.565f6310.css.map",
-    "main.e6249279.js.map": "/static/js/main.e6249279.js.map"
+    "main.a261652e.css.map": "/static/css/main.a261652e.css.map",
+    "main.3b8400ed.js.map": "/static/js/main.3b8400ed.js.map"
   },
   "entrypoints": [
-    "static/css/main.565f6310.css",
-    "static/js/main.e6249279.js"
+    "static/css/main.a261652e.css",
+    "static/js/main.3b8400ed.js"
   ]
 }
