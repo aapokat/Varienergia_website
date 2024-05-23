@@ -7,9 +7,28 @@
     text-align: center;
 }
 
+.aboutHead {
+    display: grid;
+    justify-content: center;
+}
+
 .aboutHeadline {
+    padding: 0.5rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    width: fit-content;
+    color: black;
+    background-color: rgb(201, 238, 21);
     font-size: 2.7rem;
     font-family: "BIZ UDPGothic", sans-serif;
+}
+
+.valuImg {
+    width: 20.54rem;
+}
+
+.valuImg2 {
+    width: 22.75rem;
 }
 
 .aboutTxt {
@@ -46,7 +65,9 @@
 }
 
 .infoImg {
-    max-height: 9rem;
+    max-height: 12rem;
+    width: 12rem;
+    border-radius: 20rem;
     object-fit: contain;
 }
 

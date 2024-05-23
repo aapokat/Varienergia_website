@@ -18,3 +18,56 @@ fontit
 
 Iconit
 uxwing.com
+
+
+Popuppi
+
+  const [showPopUp, setShowPopUp] = useState(true);
+
+  const handleClosePopUp = () => {
+    setShowPopUp(false); // Update state to hide the popup
+  };
+
+
+{showPopUp && (
+        <div className="popUp">
+          <h1 className="popUpHeadline">HUOM!</h1>
+          <p className="popUpTxt">
+            Hei, jos eksyit tälle sivulle huomautan että sivut ovat vielä valmistuksessa ja ne eivät
+            toimi tai näytä täysin oikealta. Sivut valmistuvat piakkoin.
+          </p>
+          <button onClick={handleClosePopUp} className="popUpBtn">
+            Sulje ikkuna tästä
+          </button>
+        </div>
+      )}
+
+
+.popUp {
+    text-align: center;
+    position: fixed;
+    height: 43vw;
+    width: 90vw;
+    border-radius: 2rem;
+    background-color: rgba(202, 238, 21, 0.833);
+    z-index: 3;
+    color: black;
+    margin: 1rem 0 0 5rem;
+    font-size: 2rem;
+    font-family: "BIZ UDPGothic", sans-serif;
+    padding: 2rem 10rem 0 10rem;
+    transition: 'top 0.3s ease-in-out'
+}
+
+.popUpBtn {
+    margin-top: 3rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    border-style: solid;
+    border-color: black;
+}
+
+.popUpHeadline {
+    margin-bottom: 2rem;
+}
+

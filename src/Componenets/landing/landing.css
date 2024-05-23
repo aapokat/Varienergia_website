@@ -1,41 +1,14 @@
 .landing {
-    margin-top: 5vw;
-    width: 100vw;
-}
+    background-image: url('../Assets/images/landingImg.png');
+    background-size: cover; /* Adjust as needed */
+    background-position: center;
+    height: 45vw;
+    
 
-.popUp {
-    text-align: center;
-    position: fixed;
-    height: 43vw;
-    width: 90vw;
-    border-radius: 2rem;
-    background-color: rgba(202, 238, 21, 0.833);
-    z-index: 3;
-    color: black;
-    margin: 1rem 0 0 5rem;
-    font-size: 2rem;
-    font-family: "BIZ UDPGothic", sans-serif;
-    padding: 2rem 10rem 0 10rem;
-    transition: 'top 0.3s ease-in-out'
-}
-
-.popUpBtn {
-    margin-top: 3rem;
-    padding: 2rem;
-    border-radius: 1rem;
-    border-style: solid;
-    border-color: black;
-}
-
-.popUpHeadline {
-    margin-bottom: 2rem;
 }
 
 
-.cntrLanding{
-    display: flex;
-    justify-content: center;
-}
+
 
 .landingImg {
     object-fit: contain;
@@ -44,26 +17,23 @@
 }
 
 .overlayContent {
-    position: absolute;
     text-align: center;
-    margin-top: 1.5rem;
+    left: 20vw;
+    padding-top:5vw;
+    background-color: rgba(30, 30, 30, 0.233);
+    height: 45vw;
 }
 
 .overlayImg1 {
     object-fit: cover;
-    position: absolute;
+    
     height: 30vw;
-    margin-top: 0.4rem;
-    margin-left: 0.58rem;
-}
-.overlayImg2 {
-    object-fit: cover;
-    height: 30vw;
+    
 }
 
 .overlayTxt {
     font-family: "BIZ UDPGothic", sans-serif;
     font-weight: 700;
     font-size: 5vw;
-    
+    text-shadow: black 0.15rem 0.15rem 1.2rem;
 }

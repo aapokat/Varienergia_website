@@ -1,4 +1,4 @@
-.navbar  {
+.navbar {
     height: 5vw;
     width: 100vw;
     margin: 0 auto;
@@ -9,7 +9,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 999;
     background-color: rgb(201, 238, 21);
     color: rgb(0, 0, 0);
     font-family: "BIZ UDPGothic", sans-serif;
@@ -21,17 +21,10 @@
 
 .navVisible {
     transform: translateY(0);
-  }
-  
+}
+
 .navHidden {
     transform: translateY(-100%);
-  }
-
-.navbar .menuIcon {
-    object-fit: cover;
-    height: 3.5vw;
-    margin-right: 2rem;
-    cursor: pointer;
 }
 
 .logoTxt {
@@ -40,43 +33,68 @@
     font-size: 3vw;
 }
 
-.navBurgerMenu {
-    display: flex;
+.menuIcon {
+    object-fit: cover;
+    height: 2.7vw;
+    cursor: pointer;
 }
 
-.navBurgerMenu:hover {
+.menuIcon2 {
+    object-fit: cover;
+    height: 2.7vw;
     cursor: pointer;
 }
 
 .pageLinks {
-    display: none;
-    margin-right: 2rem; 
+    height: 5vw;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    z-index: 1000;
+    background-color: rgb(84, 84, 84);
+    color: rgb(255, 255, 255);
+    font-family: "BIZ UDPGothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    transition: top 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.247) 0rem 0.5rem 2em;
 }
 
-
-.pageLinks.show {
-    display: flex; /* Show the links when .show class is applied */
-    flex-direction: column; /* Stack links vertically */
-    position: absolute;
-    top: 5.5rem; /* Position below the navbar */
-    right: 2rem; /* Align to the right of the menu icon */
-    background-color: rgb(201, 238, 21); /* Match navbar background */
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ .linkSection {
+    margin-left: 30vw;
+ }
+  
+  .pageLinksVisible {
+    top: 0;
   }
+  
+  .pageLinksHidden {
+    top: -100%;
+  }
+  
 
 .pageLink {
     font-family: "BIZ UDPGothic", sans-serif;
     font-weight: 400;
-    font-size: 1.25rem;
-    margin-bottom: 1rem; /* Add spacing between links */
+    font-size: 1.5rem;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin-right: 1.5rem;
 }
 
 .pageLink:hover {
-    color:rgb(84, 84, 84);
+    color: rgb(203, 203, 203);
     text-decoration-line: underline;
 }
 
+@media (min-width: 768px) {
+    .pageLinks {
+        display: flex;
+    }
+}

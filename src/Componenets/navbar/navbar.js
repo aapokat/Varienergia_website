@@ -1,93 +1,100 @@
 import React, { useState, useEffect } from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import menu_icon from '../Assets/images/menu_icon.png';
 import './navbar.css';
 
 const Navbar = () => {
-  const [showLinks, setShowLinks] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
   const [visible, setVisible] = useState(true);
+  const [pageLinksVisible, setPageLinksVisible] = useState(false);
 
   // Function to handle scroll event
   const handleScroll = () => {
     const currentScrollPos = window.pageYOffset;
-    const visible = prevScrollPos > currentScrollPos;
+    const isVisible = prevScrollPos > currentScrollPos;
 
     setPrevScrollPos(currentScrollPos);
-    setVisible(visible);
+    setVisible(isVisible);
   };
 
   // Effect to add scroll event listener
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [prevScrollPos]);
 
-  const toggleMenu = () => {
-    setShowLinks(!showLinks); // Toggle the state to show/hide links
+  // Function to toggle page links visibility
+  const togglePageLinks = () => {
+    setPageLinksVisible(!pageLinksVisible);
   };
 
-  const closeMenu = () => {
-    setShowLinks(false);
+  // Function to hide page links when a link is clicked
+  const handleLinkClick = () => {
+    setPageLinksVisible(false);
   };
 
   return (
-    <div className="navbar">
+    <div className={`navbar ${visible ? 'navVisible' : 'navHidden'}`}>
       <div className="navLogo">
         <p className="logoTxt">Väri Energia</p>
       </div>
-      <div className="navBurgerMenu" onClick={toggleMenu}>
-        <img className="menuIcon" src={menu_icon} alt="menu_icon" />
-      </div>
-      {/* Conditionally render links based on showLinks state */}
-      <div className={`pageLinks ${showLinks ? 'show' : ''}`}>
-        <Link
-          className="pageLink"
-          to="landing-section"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-          onClick={() => setShowLinks(false)} // Close menu when link is clicked
-        >
-          Landing
-        </Link>
-        <Link
-          className="pageLink"
-          to="about-section"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-          onClick={() => setShowLinks(false)}
-        >
-          About
-        </Link>
-        <Link
-          className="pageLink"
-          to="services-section"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-          onClick={() => setShowLinks(false)}
-        >
-          Services
-        </Link>
-        <Link
-          className="pageLink"
-          to="contacts-section"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-          onClick={() => setShowLinks(false)}
-        >
-          Contacts
-        </Link>
-      </div>
+      <img className="menuIcon" src={menu_icon} alt="menu_icon" onClick={togglePageLinks} />
+      <div className={`pageLinks ${pageLinksVisible ? 'pageLinksVisible' : 'pageLinksHidden'}`}>
+        
+          <div className="linkSection">
+              <Link
+                className="pageLink"
+                to="landing-section"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                onClick={handleLinkClick}
+              >
+                Landing
+              </Link>
+              <Link
+                className="pageLink"
+                to="about-section"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                onClick={handleLinkClick}
+              >
+                About
+              </Link>
+              <Link
+                className="pageLink"
+                to="services-section"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                onClick={handleLinkClick}
+              >
+                Services
+              </Link>
+              <Link
+                className="pageLink"
+                to="contacts-section"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                onClick={handleLinkClick}
+              >
+                Contacts
+              </Link>
+          </div>
+        <div className="menuimgsection">
+          <img className="menuIcon2" src={menu_icon} alt="menu_icon" onClick={togglePageLinks} />
+        </div>
+        </div>
+      
     </div>
   );
 };

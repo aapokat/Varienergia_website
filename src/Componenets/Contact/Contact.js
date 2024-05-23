@@ -7,16 +7,16 @@ const Contact = () => {
             <h1 className='contactHead'>Kysy tarjous kohteellesi!</h1>
             <div className="downSctn">
                 <div className="contactForm">
-                    <form action="Post">
+                    <form action="submit_form.php" method="POST">
                         <p className="formTxt">Nimi:</p>
-                        <input className='inputBox' type="text" placeholder='Etu- ja sukunimi' />
+                        <input className='inputBox' type="text" placeholder='Etu- ja sukunimi' id="name" name="name" required/>
                         <p className="formTxt">Puhelinnumero:</p>
                         <input id='number' className='inputBox' type="text"/>
                         <p  className="formTxt">Sähköposti:</p>
-                        <input id='email' className='inputBox' type="text"/>
+                        <input className='inputBox' type="email" id="email" name="email" required/>
                         <p className="formTxt">Tietoja kohteesta:</p>
                         <p className="formSmallTxt">(Esim kohteen koko, sijainti, ikä, kunto jne)</p>
-                        <textarea placeholder='Täytä tiedot tähän' name="infoBox" id="infoBox" cols="50" rows="7"></textarea>
+                        <textarea placeholder='Täytä tiedot tähän' id="message" name="message" required cols="50" rows="7"></textarea>
                     </form>
                 </div>
                 <div className="middleLine"></div>
