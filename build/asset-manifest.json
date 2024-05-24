@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.975c0df8.css",
+    "main.js": "/static/js/main.d152735c.js",
+    "static/media/MaaliPensseli2.png": "/static/media/MaaliPensseli2.f98edc4997b6ba00c4cb.png",
+    "static/media/landingImg.png": "/static/media/landingImg.93fc8af24d23801760d2.png",
+    "static/media/TelineKuva.jpg": "/static/media/TelineKuva.1afb0e69f2610b3c69d1.jpg",
+    "static/media/WhiteImgLogo.png": "/static/media/WhiteImgLogo.e71b5c7a26a1f75e6598.png",
+    "static/media/MaaliPensseli.jpg": "/static/media/MaaliPensseli.7bf278b58ba01a19284b.jpg",
+    "static/media/JuhoKuva.jpg": "/static/media/JuhoKuva.c5b90bbf50efaa7541fd.jpg",
+    "static/media/TeppoKuva.jpg": "/static/media/TeppoKuva.211124610df216ea5e24.jpg",
+    "static/media/valu.png": "/static/media/valu.76828c06e0263f33b81e.png",
+    "static/media/phoneIcon.png": "/static/media/phoneIcon.faa2dbd3379fbd76eced.png",
+    "static/media/MixLogo.svg": "/static/media/MixLogo.3a9c55061263a54c175224297819fec4.svg",
+    "index.html": "/index.html",
+    "main.975c0df8.css.map": "/static/css/main.975c0df8.css.map",
+    "main.d152735c.js.map": "/static/js/main.d152735c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.975c0df8.css",
+    "static/js/main.d152735c.js"
+  ]
+}
