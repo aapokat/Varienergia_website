@@ -2,7 +2,7 @@
 // Database configuration
 $servername = "localhost:3306"; // e.g., localhost
 $username = "variener_kayttis";
-$password = "Katajalatvar05";
+$password = "Katajala";
 $dbname = "variener_form_submissions_db";
 
 // Create connection

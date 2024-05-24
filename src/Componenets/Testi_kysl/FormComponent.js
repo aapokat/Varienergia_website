@@ -36,17 +36,17 @@ const FormComponent = () => {
     <form onSubmit={handleSubmit}>
       <label>
         Name:
-        <input type="text" name="name" value={formData.name} onChange={handleChange} required />
+        <input id='name' type="text" name="name" value={formData.name} onChange={handleChange} required />
       </label>
       <br />
       <label>
         Email:
-        <input type="email" name="email" value={formData.email} onChange={handleChange} required />
+        <input id='email' type="email" name="email" value={formData.email} onChange={handleChange} required />
       </label>
       <br />
       <label>
         Message:
-        <textarea name="message" value={formData.message} onChange={handleChange} required></textarea>
+        <textarea id='message' name="message" value={formData.message} onChange={handleChange} required></textarea>
       </label>
       <br />
       <button type="submit">Submit</button>
