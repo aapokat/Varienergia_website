@@ -7,6 +7,7 @@ import About from '../../Componenets/About/About';
 import Services from "../../Componenets/Services/Services";
 import Contacts from '../../Componenets/Contacts/Contacts';
 import Footer from '../../Componenets/Footer/Footer';
+import FormComponent from "../../Componenets/Testi_kysl/FormComponent";
 
 
 const Home = () => {
@@ -20,6 +21,7 @@ const Home = () => {
       <Services id="services-section"/>
       <Contacts id="contacts-section" />
       <Footer id="footer-section"/>
+      <FormComponent/>
     </>
   );
 }
