@@ -21,11 +21,12 @@
 .openFloatBtn {
     position: fixed;
     z-index: 4;
+    width: 5rem;
+    height: 5rem;
     bottom: 20px;
     right: 20px;
     opacity: 0;
-    height: 5rem;
-    width: 5rem;
+    padding-top: 2rem;
     border-radius: 5rem;
     color: black;
     background-color: rgb(201, 238, 21);
@@ -34,6 +35,7 @@
     font-weight: 700;
     font-family: "BIZ UDPGothic", sans-serif;
     text-align: center;
+    align-items: center;
 }
 .openFloatBtn:hover {
     opacity: 95%;
@@ -43,3 +45,7 @@
     cursor: pointer;
 }
 
+.ContactLink {
+    color: rgb(84, 84, 84);
+    text-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.267);
+}

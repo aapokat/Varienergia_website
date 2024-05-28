@@ -31,7 +31,6 @@
     font-family: "BIZ UDPGothic", sans-serif;
     font-weight: 700;
     font-size: 3vw;
-    color: black;
 }
 
 .menuIcon {
@@ -92,6 +91,7 @@
     transition: all 0.3s ease;
     margin-bottom: 1.5rem;
     padding: 1rem;
+    color: white;
 }
 
 .pageLink:hover {

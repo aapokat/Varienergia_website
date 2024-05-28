@@ -1,40 +1,94 @@
-.contact {
+.contacts {
     text-align: center;
     background-color: rgb(84, 84, 84);
+    margin-top: 4rem;
+    padding: 2rem;
+}
+
+.CHead {
+    display: flex;
+    justify-content: center;
 }
 
 .contactsHeadline {
-    font-family: "BIZ UDPGothic", sans-serif;
+    padding: 0.5rem 3rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    width: fit-content;
+    color: black;
+    background-color: rgb(201, 238, 21);
     font-size: 2rem;
-    margin-top: 5rem;
+    font-family: "BIZ UDPGothic", sans-serif;
+    text-shadow: 0.1rem 0.1rem 0.4rem rgba(0, 0, 0, 0.11);
+}
+
+.valuImg3 {
+    width: 100%;
+    max-width: 20.57rem;
+    margin-bottom: 1rem;
 }
 
 .contactsSctns {
     display: flex;
     justify-content: space-around;
-    margin: 5rem;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.contactCard {
+    background-color: #f0f0f088;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contactCard:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .contactImg {
-    height: 30rem;
+    height: rem;
+    margin: 0 5rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
 }
 
 .middleLine {
     background-color: rgb(201, 238, 21);
     width: 0.3rem;
+    height: 15rem;
     border-radius: 10rem;
 }
 
 .NameSctn {
-    margin-top: 3rem;
-    font-size: 1.75em;
+    margin-top: 1rem;
+    font-size: 1.25rem;
     font-family: "BIZ UDPGothic", sans-serif;
+    color: #333;
 }
 
-@media (max-width:1200px) {
+.name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 1.2rem;
+    color: #363636;
+}
+
+.phone {
+    font-size: 1rem;
+    color: #4d4d4d;
+}
+
+@media (max-width: 768px) {
     .contactsSctns {
-        display: grid;
-        margin: 0;
+        flex-direction: column;
     }
 
     .middleLine {

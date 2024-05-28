@@ -1,34 +1,26 @@
 .landing {
     background-image: url('../Assets/images/landingImg.png');
-    background-size: cover; /* Adjust as needed */
+    background-size: cover;
     background-position: center;
     height: 45vw;
-    
-
 }
-
-
-
 
 .landingImg {
     object-fit: contain;
     width: 100%;
-    
 }
 
 .overlayContent {
     text-align: center;
     left: 20vw;
-    padding-top:5vw;
+    padding-top: 5vw;
     background-color: rgba(30, 30, 30, 0.233);
     height: 45vw;
 }
 
 .overlayImg1 {
     object-fit: cover;
-    
     height: 30vw;
-    
 }
 
 .overlayTxt {
@@ -36,4 +28,44 @@
     font-weight: 700;
     font-size: 5vw;
     text-shadow: black 0.15rem 0.15rem 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .landing {
+        height: 60vw;
+    }
+
+    .overlayContent {
+        left: 10vw;
+        padding-top: 7vw;
+        height: 60vw;
+    }
+
+    .overlayImg1 {
+        height: 40vw;
+    }
+
+    .overlayTxt {
+        font-size: 6vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .landing {
+        height: 80vw;
+    }
+
+    .overlayContent {
+        left: 5vw;
+        padding-top: 10vw;
+        height: 80vw;
+    }
+
+    .overlayImg1 {
+        height: 50vw;
+    }
+
+    .overlayTxt {
+        font-size: 8vw;
+    }
 }

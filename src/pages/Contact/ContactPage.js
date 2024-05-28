@@ -1,13 +1,13 @@
 import Contact from "../../Componenets/Contact/Contact";
-import Footer from "../../Componenets/Footer/Footer";
-import Navbar from "../../Componenets/navbar/navbar";
+import Footer2 from "../../Componenets/Footer/Footer2";
+import Navbar2 from "../../Componenets/navbar/Navbar2";
 
 const ContactPage = () => {
     return ( 
         <>
-        <Navbar/>
+        <Navbar2/>
         <Contact/>
-        <Footer/>
+        <Footer2/>
         </>
      );
 }

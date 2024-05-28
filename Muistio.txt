@@ -71,3 +71,10 @@ Popuppi
     margin-bottom: 2rem;
 }
 
+
+house img
+
+
+<div className="houseImgSection">
+                    <img src={houseImg} alt="House_img" className="houseImg" />
+                </div>

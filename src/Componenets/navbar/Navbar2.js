@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom"; // Import Link from react-router-dom
 import menu_icon from '../Assets/images/menu_icon.png';
-import './navbar2.css';
+import './navbar.css';
 
-const Navbar = () => {
+const Navbar2 = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
   const [visible, setVisible] = useState(true);
   const [pageLinksVisible, setPageLinksVisible] = useState(false);
 
+  // Function to handle scroll event
   const handleScroll = () => {
     const currentScrollPos = window.pageYOffset;
     const isVisible = prevScrollPos > currentScrollPos;
@@ -16,17 +18,21 @@ const Navbar = () => {
     setVisible(isVisible);
   };
 
+  // Effect to add scroll event listener
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [prevScrollPos]);
 
+  // Function to toggle page links visibility
   const togglePageLinks = () => {
     setPageLinksVisible(!pageLinksVisible);
   };
 
+  // Function to hide page links when a link is clicked
   const handleLinkClick = () => {
     setPageLinksVisible(false);
   };
@@ -34,55 +40,40 @@ const Navbar = () => {
   return (
     <div className={`navbar ${visible ? 'navVisible' : 'navHidden'}`}>
       <div className="navLogo">
-        <p className="logoTxt">Väri Energia</p>
+        <RouterLink className="logoTxt" to='/'>Väri Energia</RouterLink> {/* Add Link to TietosuojakaytantoPage */}
+       
       </div>
       <img className="menuIcon" src={menu_icon} alt="menu_icon" onClick={togglePageLinks} />
       <div className={`pageLinks ${pageLinksVisible ? 'pageLinksVisible' : 'pageLinksHidden'}`}>
         <div className="linkSection">
-          <Link
+          <RouterLink
             className="pageLink"
-            to="landing-section"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
+            to="/#landing-section"
             onClick={handleLinkClick}
           >
             Alkuun
-          </Link>
-          <Link
+          </RouterLink>
+          <RouterLink
             className="pageLink"
-            to="about-section"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
+            to="/#about-section"
             onClick={handleLinkClick}
           >
             Tietoa meistä
-          </Link>
-          <Link
+          </RouterLink>
+          <RouterLink
             className="pageLink"
-            to="services-section"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
+            to="/#services-section"
             onClick={handleLinkClick}
           >
             Toimintamme
-          </Link>
-          <Link
+          </RouterLink>
+          <RouterLink
             className="pageLink"
-            to="contacts-section"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
+            to="/#contacts-section"
             onClick={handleLinkClick}
           >
             Yhteystiedot
-          </Link>
+          </RouterLink>
         </div>
         <div className="menuimgsection">
           <img className="menuIcon2" src={menu_icon} alt="menu_icon" onClick={togglePageLinks} />
@@ -92,4 +83,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar2;

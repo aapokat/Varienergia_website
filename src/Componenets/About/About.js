@@ -49,9 +49,7 @@ const About = () => {
                                 </div>
                             </div>
                 </div>
-                <div className="houseImgSection">
-                    <img src={houseImg} alt="House_img" className="houseImg" />
-                </div>
+                
             </div>
         </div>
      );

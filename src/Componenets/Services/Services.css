@@ -1,9 +1,13 @@
 .services {
     background-color: rgb(201, 238, 21);
     color: black;
+    margin: 0 1.5rem;
+    border-radius: 3rem;
+    box-shadow: 0.2rem 0.2rem 3rem rgba(0, 0, 0, 0.719);
+    padding: 1rem;
 }
 
-.servicesBGImg{
+.servicesBGImg {
     object-fit: contain;
     overflow: hidden;
     position: absolute;
@@ -15,24 +19,104 @@
 .servicesHead {
     padding-top: 1.5rem;
     text-align: center;
+    display: grid;
+    justify-content: center;
 }
 
-.servicesHeadline {
-    font-family: "BIZ UDPGothic", sans-serif;;
+.SHeadTxt {
+    padding: 0.5rem 2.5rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    width: fit-content;
+    color: rgb(201, 238, 21);
+    background-color: rgb(84, 84, 84);
+    font-size: 1.1rem;
+    font-family: "BIZ UDPGothic", sans-serif;
+    text-shadow: 0.1rem 0.1rem 0.4rem rgba(0, 0, 0, 0.568);
 }
+
+.SValuImg {
+    width: 100%;
+    max-width: 24.7rem;
+}
+
+.servicesHeadline, .servicesHeadline2 {
+    font-family: "BIZ UDPGothic", sans-serif;
+}
+
 .servicesHeadline2 {
     margin-top: 0.75rem;
-    font-family: "BIZ UDPGothic", sans-serif;;
 }
 
 .serviceLower {
     padding: 2rem 0 6rem 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .service {
     font-size: 1.75rem;
-    padding-top: 4rem;
-    font-family: "BIZ UDPGothic", sans-serif;;
+    padding: 3.5rem 0;
+    font-family: "BIZ UDPGothic", sans-serif;
+}
+
+.serviceLine {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.ServiceIcon {
+    width: 3rem;
+    margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+    .services {
+        margin: 0 1rem;
+        padding: 1rem;
+    }
+
+    .serviceLower {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+    }
+
+    .serviceParts {
+        width: 100%;
+    }
+
+    .service {
+        font-size: 1.5rem;
+        padding: 2rem 0;
+    }
+
+    .ServiceIcon {
+        width: 2.5rem;
+        margin-right: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .services {
+        margin: 0 0.5rem;
+        padding: 0.5rem;
+    }
+
+    .SHeadTxt {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+
+    .service {
+        font-size: 1.25rem;
+        padding: 1.5rem 0;
+    }
+
+    .ServiceIcon {
+        width: 2rem;
+        margin-right: 0.5rem;
+    }
 }
