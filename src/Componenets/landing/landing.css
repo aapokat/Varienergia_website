@@ -3,6 +3,7 @@
     background-size: cover;
     background-position: center;
     height: 45vw;
+    box-shadow: 0.1rem 0.1rem 2rem rgb(25, 25, 25);
 }
 
 .landingImg {

@@ -27,14 +27,14 @@ const Footer = () => {
             <div className="colorSection">
                 
                 <div className="pystyRivit">
-                    <div className="1row">
+                    <div className="frow">
                         <img src={greyLogo} alt="Logo" className="footerLogo" />
                         <p className="footerName">Väri Energia Oy</p>
                         <p className="footerAdrs">Höyhtykuja 17</p>
                         <p className="footerAdrs">90910 Kontio</p>
                         
                     </div>
-                    <div className="2row">
+                    <div className="srow">
                         <p className="rowHead">Siirry Sivulla</p>
                         <div className="footerNav">
                                 <Link
@@ -79,14 +79,15 @@ const Footer = () => {
                                 </Link>
                             </div>
                     </div>
-                    <div className="3row">
+                    <div className="trow">
                         <p className="rowHead">Ota yhteyttä</p>
                        
                     </div>
                 </div>
             </div>
             <div className="rights">
-                <RouterLink className="rightsTxt" to='/tietosuojakaytantoPage'>Tietosuojakäytäntö</RouterLink> {/* Add Link to TietosuojakaytantoPage */}
+                <RouterLink className="rightsTxt" to="/Tietosuojaseloste">Tietosuojaseloste</RouterLink>
+                <RouterLink className="rightsTxt" to="/Kayttoehdot">Käyttöehdot</RouterLink>
                 <p className="rightsTxt">Verkkosivut Aapon Apu</p>
                 <p className="rightsTxt">Copyright © 2024 Väri Energia Oy</p>
             </div>

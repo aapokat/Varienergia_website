@@ -15,7 +15,7 @@ header("Access-Control-Allow-Origin: *"); // Allow requests from any origin. Use
     }
 
 // Database configuration
-$servername = "localhost:3306"; // e.g., localhost
+$servername = "localhost"; // e.g., localhost
 $username = "variener_kayttis";
 $password = "Katajala";
 $dbname = "variener_form_submissions_db";

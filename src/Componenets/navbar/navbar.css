@@ -34,6 +34,10 @@
     color: black;
 }
 
+.logoTxt:hover {
+    cursor: pointer;
+}
+
 .menuIcon {
     object-fit: cover;
     height: 2.7vw;

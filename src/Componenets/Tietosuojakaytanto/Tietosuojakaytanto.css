@@ -1,0 +1,41 @@
+.tietosuojakaytanto {
+    margin: 5rem 4rem;
+    
+    
+}
+
+.ehdotHead {
+    margin-bottom: 0.75rem;
+    font-style: italic;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+
+.ehdotTx {
+    margin-bottom: 1.5rem;
+    color: black;
+}
+
+.ehdotTxt {
+    color: black;
+    font-size: 1.25rem;
+}
+
+.HeadlineTieto {
+    margin-bottom: 2rem;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    color: black;
+}
+
+.kaytantoBox {
+    margin-bottom: 4rem;
+}
+
+.HomePageLink {
+    color: black;
+    padding: 0.5rem;
+    background-color: rgb(217, 255, 25);
+    border: solid black 0.1rem;
+    border-radius: 0.5rem;
+}

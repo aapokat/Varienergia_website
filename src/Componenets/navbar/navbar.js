@@ -34,7 +34,18 @@ const Navbar = () => {
   return (
     <div className={`navbar ${visible ? 'navVisible' : 'navHidden'}`}>
       <div className="navLogo">
-        <p className="logoTxt">Väri Energia</p>
+      
+      <Link
+            className="logoTxt"
+            to="landing-section"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            onClick={handleLinkClick}
+          >
+            Väri Energia
+          </Link>
       </div>
       <img className="menuIcon" src={menu_icon} alt="menu_icon" onClick={togglePageLinks} />
       <div className={`pageLinks ${pageLinksVisible ? 'pageLinksVisible' : 'pageLinksHidden'}`}>

@@ -1,9 +1,20 @@
 .contact {
-    margin: 10rem 0;
+    margin: 7rem 5rem;
+}
+
+.sorry {
+    margin-bottom: 2rem;
+    color: black;
+    text-align: center;
 }
 
 p {
     font-family: "BIZ UDPGothic", sans-serif;
+}
+
+.contactHead {
+    margin-top: 5rem;
+    color: black;
 }
 
 h1 {
@@ -54,6 +65,7 @@ h1 {
 .formTxt {
     font-size: 1.3rem;
     margin: 1.2rem 0 0.5rem 0.1rem;
+    color: black;
 }
 
 .callSctn {
@@ -64,4 +76,8 @@ h1 {
     object-fit: contain;
     max-height: 20vw;
    
+}
+
+.formSmallTxt {
+    color: black;
 }

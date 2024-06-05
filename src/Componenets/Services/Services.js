@@ -23,28 +23,34 @@ const Services = () => {
                 <div className="serviceParts">
                     <div className="serviceLine">
                         <img src={icon1} alt="ServiceIcon" className="ServiceIcon" />
+                        <p className="serviceInfo">Sovimme urakasta ja päätämme jotain juttuja ennen alotusta</p>
                         <p className="service">Urakasta sopiminen</p>
                     </div>
                     <div className="serviceLine">
                         <img src={icon2} alt="ServiceIcon" className="ServiceIcon" />
+                        <p className="serviceInfo">Jotain tekstiä tähänkin sitten pitää keksiä tästä aiheesta</p>
                         <p className="service">Vanhan maalin rappaus</p>
                     </div>
                     <div className="serviceLine">
                         <img src={icon3} alt="ServiceIcon" className="ServiceIcon" />
+                        <p className="serviceInfo">Jotain tekstiä tähänkin sitten pitää keksiä tästä aiheesta</p>
                         <p className="service">Homepesu</p>
                     </div>
                 </div>
                 <div className="serviceParts">
                 <div className="serviceLine">
                         <img src={icon4} alt="ServiceIcon" className="ServiceIcon" />
+                        <p className="serviceInfo">Jotain tekstiä tähänkin sitten pitää keksiä tästä aiheesta</p>
                         <p className="service">Pohjamaalaus</p>
                     </div>
                     <div className="serviceLine">
                         <img src={icon5} alt="ServiceIcon" className="ServiceIcon" />
+                        <p className="serviceInfo">Jotain tekstiä tähänkin sitten pitää keksiä tästä aiheesta</p>
                         <p className="service">Pintamaalaus</p>
                     </div>
                     <div className="serviceLine">
                         <img src={icon6} alt="ServiceIcon" className="ServiceIcon" />
+                        <p className="serviceInfo">Jotain tekstiä tähänkin sitten pitää keksiä tästä aiheesta</p>
                         <p className="service">Lopputarkastus</p>
                     </div>
                 </div>

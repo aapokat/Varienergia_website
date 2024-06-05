@@ -44,7 +44,8 @@ const Footer2 = () => {
                 </div>
             </div>
             <div className="rights">
-                <RouterLink className="rightsTxt" to="/TietosuojakaytantoPage">Tietosuojakäytäntö</RouterLink>
+                <RouterLink className="rightsTxt" to="/Tietosuojaseloste">Tietosuojaseloste</RouterLink>
+                <RouterLink className="rightsTxt" to="/Kayttoehdot">Käyttöehdot</RouterLink>
                 <p className="rightsTxt">Verkkosivut Aapon Apu</p>
                 <p className="rightsTxt">Copyright © 2024 Väri Energia Oy</p>
             </div>
