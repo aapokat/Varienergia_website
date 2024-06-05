@@ -6,6 +6,7 @@ import React, { useState } from 'react';
 const Contact = () => {
     const [formData, setFormData] = useState({
         name: '',
+        phone: '',
         email: '',
         message: '',
       });
@@ -36,22 +37,22 @@ const Contact = () => {
 
     return ( 
         <div className="contact">
-            <h1 className="sorry">Pahoittelut sotuksta mutta tämä ominaisuus on vielä pois käytöstä :)</h1>
-            <RouterLink className="HomePageLink" to='/'>Palaa kotisivulle</RouterLink> {/* Add Link to TietosuojakaytantoPage */}
+            
             <h1 className='contactHead'>Kysy tarjous kohteellesi!</h1>
             <div className="downSctn">
                 <div className="contactForm">
-                    <form action="submit_form.php" method="POST">
+                    <form onSubmit={handleSubmit}>
                         <p className="formTxt">Nimi:</p>
-                        <input className='inputBox' type="text" placeholder='Etu- ja sukunimi' id="name" name="name" required/>
+                        <input type="text" name="name" className='inputBox' placeholder='Etu- ja sukunimi' value={formData.name} onChange={handleChange} required />
                         <p className="formTxt">Puhelinnumero:</p>
-                        <input id='number' className='inputBox' type="text"/>
+                        <input id='phone' name='phone' className='inputBox' type="text" value={formData.phone} onChange={handleChange} required/>
                         <p  className="formTxt">Sähköposti:</p>
-                        <input className='inputBox' type="email" id="email" name="email" required/>
+                        <input type="email" name="email" className='inputBox' value={formData.email} onChange={handleChange} required />
                         <p className="formTxt">Tietoja kohteesta:</p>
                         <p className="formSmallTxt">(Esim kohteen koko, sijainti, ikä, kunto jne)</p>
-                        <textarea placeholder='Täytä tiedot tähän' id="message" name="message" required cols="50" rows="7"></textarea>
-                        <button type='submit'>Lähetä</button>
+                        <textarea className='formTxtArea' placeholder='Täytä tiedot tähän' id='message' name="message" value={formData.message} onChange={handleChange} required cols="50" rows="7"></textarea>
+                        <br />
+                        <button className='sendBtn' type='submit'>Lähetä</button>
                     </form>
                 </div>
                 <div className="middleLine"></div>
@@ -67,24 +68,7 @@ const Contact = () => {
                 </div>
             </div>
 
-            <form onSubmit={handleSubmit}>
-      <label>
-        Name:
-        <input type="text" name="name" value={formData.name} onChange={handleChange} required />
-      </label>
-      <br />
-      <label>
-        Email:
-        <input type="email" name="email" value={formData.email} onChange={handleChange} required />
-      </label>
-      <br />
-      <label>
-        Message:
-        <textarea name="message" value={formData.message} onChange={handleChange} required></textarea>
-      </label>
-      <br />
-      <button type="submit">Submit</button>
-    </form>
+            
         </div>
      );
 }

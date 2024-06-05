@@ -78,3 +78,9 @@ house img
 <div className="houseImgSection">
                     <img src={houseImg} alt="House_img" className="houseImg" />
                 </div>
+
+
+
+
+<h1 className="sorry">Pahoittelut sotuksta mutta tämä ominaisuus on vielä pois käytöstä :)</h1>
+            <RouterLink className="HomePageLink" to='/'>Palaa kotisivulle</RouterLink> {/* Add Link to TietosuojakaytantoPage */}

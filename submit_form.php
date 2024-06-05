@@ -33,11 +33,12 @@ if ($conn->connect_error) {
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Sanitize and validate form data
     $name = mysqli_real_escape_string($conn, $_POST['name']);
+    $phone = mysqli_real_escape_string($conn, $_POST['phone']);
     $email = mysqli_real_escape_string($conn, $_POST['email']);
     $message = mysqli_real_escape_string($conn, $_POST['message']);
 
     // Insert form data into database
-    $sql = "INSERT INTO form_submissions (name, email, message) VALUES ('$name', '$email', '$message')";
+    $sql = "INSERT INTO form_submissions (name, phone, email, message) VALUES ('$name', '$phone', '$email', '$message')";
 
     if ($conn->query($sql) === TRUE) {
         // Prepare email
@@ -45,6 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $subject = "$name\n Yhteydenotto pyyntö";
         $body = "Olet saanut uuden yhteydenoton/tarjous pyynnön:\n\n";
         $body .= "Nimi: $name\n";
+        $body .= "Puhelinnumero: $phone\n";
         $body .= "Sähköposti: $email\n";
         $body .= "Viesti: $message\n";
         $headers = "From: aapo.katajala@gmail.com"; // Replace with a valid "From" address
