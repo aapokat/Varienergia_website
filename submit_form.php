@@ -1,21 +1,22 @@
 <?php
+// Enable error reporting for debugging
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 // Enable CORS
-header("Access-Control-Allow-Origin: *"); // Allow requests from any origin. Use specific origin in production, e.g., "http://yourdomain.com"
-    header("Access-Control-Allow-Methods: POST, GET, OPTIONS");
-    header("Access-Control-Allow-Headers: Content-Type");
-    
-    // Handle preflight request (OPTIONS)
-    if ($_SERVER["REQUEST_METHOD"] == "OPTIONS") {
-        http_response_code(200);
-        exit();
-    }
+header("Access-Control-Allow-Origin: https://www.varienergia.fi"); // Allow requests from any origin. In production, replace '*' with 'http://your-react-app-domain.com'
+header("Access-Control-Allow-Methods: POST, GET, OPTIONS");
+header("Access-Control-Allow-Headers: Content-Type");
+
+// Handle preflight request (OPTIONS)
+if ($_SERVER["REQUEST_METHOD"] == "OPTIONS") {
+    http_response_code(200);
+    exit();
+}
 
 // Database configuration
-$servername = "localhost"; // e.g., localhost
+$servername = "localhost"; // Assuming your database is on the same server. Change if provided with a different hostname.
 $username = "variener_kayttis";
 $password = "Katajala";
 $dbname = "variener_form_submissions_db";
@@ -39,7 +40,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "INSERT INTO form_submissions (name, email, message) VALUES ('$name', '$email', '$message')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "Form submission successful!";
+        // Prepare email
+        $to = "aapo.katajala@gmail.com"; // Replace with your email address
+        $subject = "New Form Submission";
+        $body = "You have received a new form submission:\n\n";
+        $body .= "Name: $name\n";
+        $body .= "Email: $email\n";
+        $body .= "Message: $message\n";
+        $headers = "From: aapo.katajala@gmail.com"; // Replace with a valid "From" address
+
+        // Send email
+        if (mail($to, $subject, $body, $headers)) {
+            echo "Form submission successful and email sent!";
+        } else {
+            echo "Form submission successful but email sending failed.";
+        }
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
