@@ -42,11 +42,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($conn->query($sql) === TRUE) {
         // Prepare email
         $to = "aapo.katajala@gmail.com"; // Replace with your email address
-        $subject = "New Form Submission";
-        $body = "You have received a new form submission:\n\n";
-        $body .= "Name: $name\n";
-        $body .= "Email: $email\n";
-        $body .= "Message: $message\n";
+        $subject = "$name\n Yhteydenotto pyyntö";
+        $body = "Olet saanut uuden yhteydenoton/tarjous pyynnön:\n\n";
+        $body .= "Nimi: $name\n";
+        $body .= "Sähköposti: $email\n";
+        $body .= "Viesti: $message\n";
         $headers = "From: aapo.katajala@gmail.com"; // Replace with a valid "From" address
 
         // Send email
