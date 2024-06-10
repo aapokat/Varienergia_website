@@ -4,6 +4,7 @@
     background-position: center;
     height: 45vw;
     box-shadow: 0.1rem 0.1rem 2rem rgb(25, 25, 25);
+    background-color: rgb(0, 0, 0);
 }
 
 .landingImg {
@@ -15,7 +16,7 @@
     text-align: center;
     left: 20vw;
     padding-top: 5vw;
-    background-color: rgba(30, 30, 30, 0.233);
+    background-color: rgba(82, 82, 82, 0.233);
     height: 45vw;
 }
 

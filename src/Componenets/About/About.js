@@ -39,18 +39,18 @@ const About = () => {
                                 <div className="infoWindow">
                                     <h3 className="infoImgTxt">Helppo</h3>
                                     <img src={infoImg2} alt="info_img" className="infoImg" />
-                                    
-                                        <p className="infoTxt2">Yksinkertainen yrityksen rakenne. Kiinteä ja selkeä urakan hinta. Koko toimintamme perustuu tyytyväisiin asiakkaisiin sekä työntekiöihin.</p>
+                                   <p className="infoTxt2">Yksinkertainen yrityksen rakenne. Kiinteä ja selkeä urakan hinta. Koko toimintamme perustuu tyytyväisiin asiakkaisiin sekä työntekiöihin.</p>
                                     
                                 </div>
                                 <div className="infoWindow">
                                     <h3 className="infoImgTxt">Luotettava</h3>
                                     <img src={infoImg3} alt="info_img" className="infoImg" />
-                                    <p className="infoTxt3">Kannamme vastuun kaikista työmaalla tapahtuvista asioista, sekä annamme 24kk takuun kaikelle meidän aiheuttamalle vahingolle.</p>
+                                    <p className="infoTxt3">Kannamme vastuun kaikista työmaalla tapahtuvista asioista, sekä annamme <b>24kk</b> takuun kaikelle meidän aiheuttamalle vahingolle.</p>
                                 </div>
                             </div>
+                            
                 </div>
-                
+               
             </div>
         </div>
      );

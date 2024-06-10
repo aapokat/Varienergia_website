@@ -56,14 +56,9 @@ const Contact = () => {
                     </form>
                 </div>
                 <div className="middleLine"></div>
-                <div className="callSctn">
-                    <form action="Post">
-                        <p className="leaveCall">Voit myös jättää numerosi ja me soittelemme teille.</p>
-                        <p className="formTxt">Nimi:</p>
-                        <input className='inputBox' type="text" placeholder='Etu- ja sukunimi' />
-                        <p className="formTxt">Puhelinnumero:</p>
-                        <input className='inputBox'  type="text"/>
-                    </form>
+                <div className="callSctn"> 
+                
+                   
                     <img src={cntcImg} alt="Logo_image" className="contactImg" />
                 </div>
             </div>
