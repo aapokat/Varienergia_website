@@ -1,0 +1,25 @@
+# Turn on mod_rewrite
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Redirect all requests to index.html (client-side routing support)
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^ index.html [L]
+</IfModule>
+
+# Cache invalidation for updated assets
+<IfModule mod_headers.c>
+    <FilesMatch "\.(html|css|js|json|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|otf|eot|ttf|webmanifest)$">
+        Header set Cache-Control "no-cache, no-store, must-revalidate"
+        Header set Pragma "no-cache"
+        Header set Expires 0
+    </FilesMatch>
+</IfModule>
+
+# Security headers (optional, but recommended)
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "DENY"
+    Header set X-XSS-Protection "1; mode=block"
+</IfModule>

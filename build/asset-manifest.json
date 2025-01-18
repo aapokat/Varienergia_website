@@ -1,12 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.541d6355.css",
-    "main.js": "/static/js/main.d0ee2de1.js",
+    "main.css": "/static/css/main.ea35bc69.css",
+    "main.js": "/static/js/main.b46b4e6e.js",
     "static/media/TelineKuvaRoiske.png": "/static/media/TelineKuvaRoiske.f87a7a38bd805889b86a.png",
     "static/media/MaaliPensseli2.0.png": "/static/media/MaaliPensseli2.0.20e5d7375d455a8e974d.png",
     "static/media/IkkunaKuva1.0.png": "/static/media/IkkunaKuva1.0.417743f30a98e238b77b.png",
+    "static/media/Talo1.jpg": "/static/media/Talo1.53a08a002c2352418586.jpg",
+    "static/media/Talo3.jpg": "/static/media/Talo3.60d3db2e674842d07058.jpg",
+    "static/media/Talo2.jpg": "/static/media/Talo2.dae72ad2ecac7970364e.jpg",
     "static/media/JuhoJaTeppoRoiske.png": "/static/media/JuhoJaTeppoRoiske.87d14e359c505d239d6a.png",
-    "static/media/landingImg.png": "/static/media/landingImg.93fc8af24d23801760d2.png",
+    "static/media/Talli2.jpg": "/static/media/Talli2.2b1c6e7a0152a85b442e.jpg",
+    "static/media/Talli1.jpg": "/static/media/Talli1.904fdde560d480a748ec.jpg",
+    "static/media/AloitusKuva2.jpg": "/static/media/AloitusKuva2.645819bab95b0be22862.jpg",
+    "static/media/Talli3.jpg": "/static/media/Talli3.56f7c0a9d88ab980e65f.jpg",
     "static/media/WhiteImgLogo.png": "/static/media/WhiteImgLogo.e71b5c7a26a1f75e6598.png",
     "static/media/MaaliPensseli1.0.jpg": "/static/media/MaaliPensseli1.0.a001381023363f16e478.jpg",
     "static/media/JuhoKuva.jpg": "/static/media/JuhoKuva.c5b90bbf50efaa7541fd.jpg",
@@ -24,11 +30,11 @@
     "static/media/PohjaImg.svg": "/static/media/PohjaImg.e6bfdcd8cbba5294181a86a1ea534778.svg",
     "static/media/SkrapImg.svg": "/static/media/SkrapImg.155c16ab1a06df30f3cc188461107530.svg",
     "index.html": "/index.html",
-    "main.541d6355.css.map": "/static/css/main.541d6355.css.map",
-    "main.d0ee2de1.js.map": "/static/js/main.d0ee2de1.js.map"
+    "main.ea35bc69.css.map": "/static/css/main.ea35bc69.css.map",
+    "main.b46b4e6e.js.map": "/static/js/main.b46b4e6e.js.map"
   },
   "entrypoints": [
-    "static/css/main.541d6355.css",
-    "static/js/main.d0ee2de1.js"
+    "static/css/main.ea35bc69.css",
+    "static/js/main.b46b4e6e.js"
   ]
 }
