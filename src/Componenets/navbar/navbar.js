@@ -34,7 +34,7 @@ const Navbar = () => {
   return (
     <div className={`navbar ${visible ? 'navVisible' : 'navHidden'}`}>
       <div className="navLogo">
-      
+
       <Link
             className="logoTxt"
             to="landing-section"
@@ -82,6 +82,17 @@ const Navbar = () => {
             onClick={handleLinkClick}
           >
             Toimintamme
+          </Link>
+          <Link
+              className="pageLink"
+              to="feedback-section"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              onClick={handleLinkClick}
+          >
+            Kohteitamme
           </Link>
           <Link
             className="pageLink"

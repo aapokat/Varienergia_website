@@ -1,17 +1,15 @@
 .about {
-   width: 100vw;
-   background-image: url(../Assets/images/TelineKuvaRoiske.png);
-   background-size: contain;
-   background-repeat: no-repeat;
-   background-position: 30vw;
-   background-color: #ffffff;
+    width: 100vw; /* Scaled down */
+    background-image: url(../Assets/images/TelineKuvaRoiske.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 45vw; /* Scaled down */
 }
 
 .firstSection {
-    padding-top: 2rem;
+    padding-top: 1.6rem; /* Scaled down */
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.196);
-    padding-bottom: 1.5rem;
+    padding-bottom: 1.2rem; /* Scaled down */
 }
 
 .aboutHead {
@@ -22,114 +20,117 @@
 .aboutHeadline {
     width: fit-content;
     color: black;
-    font-size: 2rem;
+    font-size: 1.6rem; /* Scaled down */
     font-family: "BIZ UDPGothic", sans-serif;
-    text-shadow: 0.1rem 0.1rem 0.4rem rgba(0, 0, 0, 0.26);
+    text-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.26); /* Scaled down */
     text-decoration: underline rgb(201, 238, 21);
-    text-underline-offset: 0.5rem;
+    text-underline-offset: 0.4rem; /* Scaled down */
 }
 
 .valuImg {
-    width: 19.98rem;
+    width: 16rem; /* Rounded down */
 }
 
 .valuImg2 {
-    width: 21.61rem;
+    width: 17.3rem; /* Rounded down */
 }
 
 .aboutTxt {
-    margin: 1rem 2rem 0 2rem;
-    font-size: 1.5rem;
-    margin: 1rem 6rem 0 6rem;
+    margin: 0.8rem 4.8rem 0 4.8rem; /* Scaled down */
+    font-size: 1.2rem; /* Scaled down */
     font-family: "BIZ UDPGothic", sans-serif;
     color: rgb(0, 0, 0);
 }
 
 .secondSection {
     display: flex;
-    background-color: rgba(255, 255, 255, 0.196);
-    padding-top: 4rem;
+    padding-top: 3.2rem; /* Scaled down */
 }
- 
-.infoSection{
+
+.infoSection {
     display: flex;
     justify-content: space-between;
-    width: 90vw;
-    margin-top: 3.2rem;
-    padding: 0 10vw 4rem 10vw;
+    width: 72vw; /* Scaled down */
+    margin-top: 2.6rem; /* Scaled down */
+    padding: 1.5vw 8vw 3.2rem 8vw; /* Scaled down */
 }
 
 .chooseHeadline {
-    font-size: 2.4rem;
+    font-size: 1.9rem; /* Scaled down */
     font-family: "BIZ UDPGothic", sans-serif;
     text-align: center;
-    
 }
 
 .infoWindow {
     display: flex;
     justify-content: center;
     text-align: center;
-    border-radius: 2rem;
+    border-radius: 1.6rem; /* Scaled down */
     align-items: center;
 }
 
 .infoImg {
     object-fit: cover;
-    width: 10rem;
-
-    box-shadow: 0.1rem 0.1rem 1rem black;
-    border-radius: 15rem;
+    width: 8rem; /* Scaled down */
+    box-shadow: 0.08rem 0.08rem 0.8rem black; /* Scaled down */
+    border-radius: 12rem; /* Scaled down */
     object-fit: contain;
 }
-
 
 .infoImgTxt {
     position: absolute;
     color: black;
-    font-size: 1.9rem;
-    
-    text-shadow: 0.1rem 0.1rem 0.3rem white;
+    font-size: 1.5rem; /* Scaled down */
+    text-shadow: 0.08rem 0.08rem 0.24rem white; /* Scaled down */
 }
 
+/* First Info Text: Smaller size */
 .infoTxt1 {
     opacity: 0;
-    height: 15rem;
-    width: 15rem;
-    border-radius: 15rem;
-    align-items: center;
-    padding: 5rem 0.75rem 1rem 0.75rem;
+    height: 12rem;
+    width: 12rem;
+    border-radius: 12rem;
+    display: flex; /* Enable Flexbox */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    text-align: center; /* Ensure multiline text remains centered */
     color: black;
-    font-size: 1.1rem;
+    font-size: 1rem; /* Slightly smaller text */
+    background-color: rgba(202, 238, 21, 0.9);
+    position: absolute;
+    transition: opacity 0.5s ease; /* Smooth fade-in effect */
+}
+
+/* Second Info Text: Larger size */
+.infoTxt2 {
+    opacity: 0;
+    height: 13.5rem; /* Largest height */
+    width: 13.5rem; /* Largest width */
+    border-radius: 14rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    font-size: 1rem; /* Slightly larger text size */
     background-color: rgba(202, 238, 21, 0.9);
     position: absolute;
     transition: opacity 0.5s ease;
 }
 
-.infoTxt2 {
-    opacity: 0;
-    height: 15rem;
-    width: 15rem;
-    border-radius: 15rem;
-    align-items: center;
-    padding: 3rem 0.75rem 1rem 0.75rem;
-    color: black;
-    font-size: 1.1rem;
-    background-color: rgb(202, 238, 21, 0.9);
-    position: absolute;
-    transition: opacity 0.5s ease;
-}
-
+/* Third Info Text: Contains special text styling */
 .infoTxt3 {
     opacity: 0;
-    height: 15rem;
-    width: 15rem;
-    border-radius: 15rem;
+    height: 13.5rem; /* Largest height */
+    width: 13.5rem; /* Largest width */
+    border-radius: 16rem;
+    display: flex;
     align-items: center;
-    padding: 3.5rem 0.75rem 1rem 0.75rem;
+    justify-content: center;
+    text-align: center;
     color: black;
-    font-size: 1.1rem;
-    background-color: rgb(202, 238, 21, 0.9);
+    font-size: 1rem; /* Slightly larger text size */
+    background-color: rgba(202, 238, 21, 0.9);
     position: absolute;
     transition: opacity 0.5s ease;
 }
@@ -139,28 +140,27 @@
 }
 
 .houseImgSection {
-    max-width: 25vw;
-    padding-left: 10vw;
-    padding-bottom: 4rem;
+    max-width: 20vw; /* Scaled down */
+    padding-left: 8vw; /* Scaled down */
+    padding-bottom: 3.2rem; /* Scaled down */
 }
 
 .houseImg {
-    max-height: 22.5rem;
+    max-height: 18rem; /* Scaled down */
 }
 
 @media only screen and (max-width: 820px) {
     .infoSection {
         display: grid;
         justify-content: center;
-        
     }
 
     .infoTxt1, .infoTxt2, .infoTxt3 {
-        margin-bottom: 3rem;
+        margin-bottom: 2.4rem; /* Scaled down */
     }
 
     .infoImg {
-        width: 14rem;
-        margin-bottom: 2rem;
+        width: 11.2rem; /* Scaled down */
+        margin-bottom: 1.6rem; /* Scaled down */
     }
 }

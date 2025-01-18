@@ -1,6 +1,7 @@
 .NotFound {
     text-align: center;
     margin-top: 20rem;
+    color: black;
 }
 
 .NFHeadline {
@@ -9,4 +10,13 @@
 
 .NFPara {
     font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.BackToHomePage {
+    color: black;
+    padding: 0.5rem;
+    background-color: rgb(217, 255, 25);
+    border: solid black 0.1rem;
+    border-radius: 0.5rem;
 }

@@ -8,19 +8,19 @@ p {
 }
 
 .someRowName {
-    font-size: 1.75rem;
+    font-size: 1.4rem; /* Scaled down */
     font-family: "BIZ UDPGothic", sans-serif;
-    text-shadow: 0.3rem 0.3rem 0.2rem rgba(84, 84, 84, 0.39);
+    text-shadow: 0.24rem 0.24rem 0.16rem rgba(84, 84, 84, 0.39); /* Scaled down */
 }
 
 .someRow {
     background-color: rgb(191, 224, 22);
     display: flex;
     justify-content: space-between;
-    padding: 0.25rem 2.25rem 0.25rem 2.25rem;
+    padding: 0.2rem 1.8rem; /* Scaled down */
     font-family: "BIZ UDPGothic", sans-serif;
     align-items: center;
-    box-shadow: -0.5rem -0.5rem 1rem rgba(0, 0, 0, 0.11);
+    box-shadow: -0.4rem -0.4rem 0.8rem rgba(0, 0, 0, 0.11); /* Scaled down */
 }
 
 .someBtns {
@@ -28,43 +28,46 @@ p {
     display: flex;
 }
 
-
-.SclsImg{
-    height: 2rem;
-    margin: 0.1rem 0 0.1rem 1.5rem; 
- }
+.SclsImg {
+    height: 1.6rem; /* Scaled down */
+    margin: 0.08rem 0 0.08rem 1.2rem; /* Scaled down */
+}
 
 .pystyRivit {
-    padding: 1.5rem 0;
+    padding: 1.2rem 0; /* Scaled down */
     background-color: rgb(201, 238, 21);
     display: flex;
     justify-content: space-around;
-    font-size: 1.4rem;
+    font-size: 1.12rem; /* Scaled down */
     font-family: "BIZ UDPGothic", sans-serif;
 }
 
 .footerLogo {
     object-fit: contain;
-    height: 4.5rem;
+    height: 3.6rem; /* Scaled down */
 }
 
 .footerName {
     font-weight: 700;
+    font-size: 1.12rem; /* Scaled down */
 }
 
 .footerAdrs {
     color: rgb(73, 73, 73);
+    font-size: 0.8rem; /* Scaled down */
 }
 
 .rowHead {
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.6rem; /* Scaled down */
     font-family: "BIZ UDPGothic", sans-serif;
+    font-size: 1rem; /* Scaled down */
     text-decoration: underline;
-    text-underline-offset: 0.25rem;
+    text-underline-offset: 0.2rem; /* Scaled down */
 }
 
 .footerNav {
     display: grid;
+    font-size: 0.9rem; /* Scaled down */
 }
 
 .Link {
@@ -74,53 +77,56 @@ p {
 .Link:hover {
     cursor: pointer;
     text-decoration: underline;
-    text-underline-offset: 0.25rem;
+    text-underline-offset: 0.2rem; /* Scaled down */
 }
 
 .rights {
     display: flex;
     justify-content: space-between;
-    padding: 1rem 3rem 0.5rem 3rem;
+    padding: 0.8rem 2.4rem; /* Scaled down */
     background-color: rgba(202, 238, 21, 0.692);
     font-family: "BIZ UDPGothic", sans-serif;
+    font-size: 0.9rem; /* Scaled down */
 }
 
 .rightsTxt {
     color: black;
+    font-size: 0.9rem; /* Scaled down */
 }
 
 @media only screen and (max-width: 630px) {
     .someRow {
-      flex-direction: column;
-      align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
-  
+
     .someBtns {
-      margin-top: 1rem;
+        margin-top: 0.8rem; /* Scaled down */
     }
-  
+
     .pystyRivit {
-      flex-direction: column;
-      align-items: center;
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.9rem; /* Scaled down */
     }
-  
+
     .rights {
-      flex-direction: column;
-      align-items: center;
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.8rem; /* Scaled down */
     }
-  
+
     .rightsTxt {
-      margin-bottom: 1rem;
+        margin-bottom: 0.8rem; /* Scaled down */
     }
 
     .frow {
-        margin-bottom: 1.25rem;
+        margin-bottom: 1rem; /* Scaled down */
     }
     .footerNav {
-        margin-bottom: 1.25rem;
+        margin-bottom: 1rem; /* Scaled down */
     }
     .srow {
         margin-left: 0;
     }
-  }
-  
+}

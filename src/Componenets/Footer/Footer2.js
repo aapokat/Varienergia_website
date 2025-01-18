@@ -7,7 +7,7 @@ import FbImg from '../Assets/images/FbImg.webp';
 import IgImg from '../Assets/images/IgImg.svg';
 
 const Footer2 = () => {
-    return ( 
+    return (
         <div className="footer">
             <div className="someRow">
                 <h3 className="someRowName">Väri Energia</h3>
@@ -35,6 +35,7 @@ const Footer2 = () => {
                             <RouterLink className="Link" to="/#landing-section">Alkuun</RouterLink>
                             <RouterLink className="Link" to="/#about-section">Tietoa meistä</RouterLink>
                             <RouterLink className="Link" to="/#services-section">Toimintamme</RouterLink>
+                            <RouterLink className="Link" to="/#feedback-section">Kohteitamme</RouterLink>
                             <RouterLink className="Link" to="/#contacts-section">Yhteystiedot</RouterLink>
                         </div>
                     </div>

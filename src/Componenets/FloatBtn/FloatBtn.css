@@ -1,51 +1,144 @@
-.floatBtnImg {
+/* Floating Button Container */
+.floatBtn {
     position: fixed;
-    z-index: 3;
-    bottom: 20px;
-    right: 20px;
-    background-color: rgba(165, 165, 165, 0.89);
-    width: 5rem;
-    height: 5rem;
-    border-radius: 5rem;
-    color: black;
-    text-align: center;
-    opacity: 85%;
+    bottom: 16px; /* Scaled down */
+    right: 16px; /* Scaled down */
+    width: 4rem; /* Scaled down */
+    height: 4rem; /* Scaled down */
+    border-radius: 50%;
+    background-color: rgba(165, 165, 165, 0.9);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3.2px 6.4px rgba(0, 0, 0, 0.3); /* Scaled down */
+    z-index: 1000; /* Keep a high layer */
 }
 
 .btnImg {
+    width: 2.4rem; /* Scaled down */
+    height: 2.4rem; /* Scaled down */
     object-fit: contain;
-    width: 3rem;
-    margin-top: 0.9rem;
 }
 
-.openFloatBtn {
+/* Chat Bot Window */
+.chatBotWindow {
     position: fixed;
-    z-index: 4;
-    width: 5rem;
-    height: 5rem;
-    bottom: 20px;
-    right: 20px;
-    opacity: 0;
-    padding-top: 2rem;
-    border-radius: 5rem;
-    color: black;
-    background-color: rgb(201, 238, 21);
-    box-shadow: black 0.5rem 0.5rem 1rem;
-    font-size: 2rem;
-    font-weight: 700;
-    font-family: "BIZ UDPGothic", sans-serif;
-    text-align: center;
-    align-items: center;
+    bottom: 16px; /* Scaled down */
+    right: 16px; /* Scaled down */
+    width: 20rem; /* Scaled down */
+    height: 28rem; /* Scaled down */
+    background: #fff;
+    border-radius: 8px; /* Scaled down */
+    box-shadow: 0px 3.2px 6.4px rgba(0, 0, 0, 0.3); /* Scaled down */
+    display: flex;
+    flex-direction: column;
+    z-index: 1050; /* Higher than the floating button */
 }
-.openFloatBtn:hover {
-    opacity: 95%;
-    height: 12rem;
-    width: 10rem;
-    border-radius: 1rem;
+
+/* Chat Header */
+.chatHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem; /* Scaled down */
+    background-color: rgb(201, 238, 21);
+    color: #4d4d4d;
+    border-radius: 8px 8px 0 0; /* Scaled down */
+    font-size: 1rem; /* Scaled down */
+}
+
+.exitButton {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1rem; /* Scaled down */
     cursor: pointer;
 }
 
-.ContactLink {
-    color: rgb(84, 84, 84);
-    text-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.267);
+.exitButton:hover {
+    color: #ffdddd;
+}
+
+/* Chat Window Content */
+.chatWindow {
+    flex: 1;
+    overflow-y: auto;
+    padding: 0.8rem; /* Scaled down */
+    background-color: #f9f9f9;
+}
+
+/* Bot and User Messages */
+.botMessage,
+.userMessage {
+    text-align: left;
+    background: #e1f5fe;
+    margin-bottom: 0.8rem; /* Scaled down */
+    padding: 0.64rem; /* Scaled down */
+    border-radius: 8px; /* Scaled down */
+    max-width: 80%;
+    word-wrap: break-word; /* Prevent overflow */
+    white-space: pre-wrap; /* Preserve line breaks */
+    overflow-wrap: break-word; /* Break unbroken text */
+    color: #4d4d4d;
+}
+
+.userMessage {
+    text-align: right;
+    background: #c8e6c9;
+    margin-left: auto; /* Align user message to the right */
+}
+
+/* Chat Input Area */
+.chatInputArea {
+    display: flex;
+    padding: 0.8rem; /* Scaled down */
+    background: white;
+    border-top: 0.8px solid #ddd; /* Scaled down */
+}
+
+.chatTextarea {
+    flex: 1;
+    border: 0.8px solid #ddd; /* Scaled down */
+    border-radius: 4px; /* Scaled down */
+    padding: 0.64rem; /* Scaled down */
+    font-size: 0.8rem; /* Scaled down */
+    min-height: 2rem; /* Scaled down */
+    max-height: 4.8rem; /* Scaled down */
+    resize: none;
+    overflow-y: auto;
+    line-height: 1.2; /* Scaled down */
+    box-sizing: border-box;
+    margin-right: 0.4rem; /* Scaled down */
+    word-wrap: break-word;
+}
+
+/* Scrollbar styles (optional) */
+.chatTextarea::-webkit-scrollbar {
+    width: 0.3rem; /* Scaled down */
+}
+
+.chatTextarea::-webkit-scrollbar-thumb {
+    background-color: #cfcfcf;
+    border-radius: 4px; /* Scaled down */
+}
+
+.chatTextarea::-webkit-scrollbar-thumb:hover {
+    background-color: #b3b3b3;
+}
+
+/* Send Button */
+.sendButton {
+    background-color: rgb(201, 238, 21);
+    color: #4d4d4d;
+    padding: 0.48rem 0.8rem; /* Scaled down */
+    border: none;
+    border-radius: 4px; /* Scaled down */
+    font-size: 0.8rem; /* Scaled down */
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.sendButton:hover {
+    background-color: rgb(162, 189, 18);
 }

@@ -6,6 +6,7 @@ import FloatBtn from '../../Componenets/FloatBtn/FloatBtn';
 import Landing from '../../Componenets/landing/landing';
 import About from '../../Componenets/About/About';
 import Services from "../../Componenets/Services/Services";
+import Feedback from '../../Componenets/Feedback/Feedback';
 import Contacts from '../../Componenets/Contacts/Contacts';
 import Footer from '../../Componenets/Footer/Footer';
 import FormComponent from "../../Componenets/Testi_kysl/FormComponent";
@@ -30,6 +31,7 @@ const Home = () => {
       <Landing id="landing-section" />
       <About id="about-section" />
       <Services id="services-section"/>
+      <Feedback id="feedback-section"/>
       <Contacts id="contacts-section" />
       <Footer id="footer-section"/>
     </>

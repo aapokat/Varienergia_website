@@ -1,0 +1,144 @@
+.feedback {
+    text-align: center;
+    padding: 16px; /* Scaled down */
+    overflow: visible;
+    position: relative;
+    color: black;
+}
+
+.feedbackHeadline {
+    padding-bottom: 0.8rem; /* Scaled down */
+    color: black;
+    font-size: 1.6rem; /* Scaled down */
+    font-family: "BIZ UDPGothic", sans-serif;
+    text-shadow: 0.08rem 0.08rem 0.32rem rgba(0, 0, 0, 0.26); /* Scaled down */
+    text-decoration: underline rgb(201, 238, 21);
+    text-underline-offset: 0.4rem; /* Scaled down */
+}
+
+.comments-headline {
+    display: none; /* TÄMÄ POIS KOKONAAN */
+    font-family: "BIZ UDPGothic", sans-serif;
+    text-shadow: 0.08rem 0.08rem 0.32rem rgba(0, 0, 0, 0.26); /* Scaled down */
+    text-decoration: underline rgb(201, 238, 21);
+    text-underline-offset: 0.4rem; /* Scaled down */
+}
+
+.reviews-slider {
+    display: flex; /* FLEX */
+    justify-content: center;
+    align-items: center;
+    gap: 24px; /* Scaled down */
+    position: relative;
+    width: 100%;
+    height: 336px; /* Scaled down */
+    overflow: visible;
+}
+.comments-slider {
+    display: none; /* FLEX */
+    justify-content: center;
+    align-items: center;
+    gap: 24px; /* Scaled down */
+    position: relative;
+    width: 100%;
+    height: 336px; /* Scaled down */
+    overflow: visible;
+}
+
+.review {
+    flex-shrink: 0;
+    width: 33%; /* Scaled down */
+    height: 75%; /* Scaled down */
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px; /* Scaled down */
+    transition: all 0.4s ease-in-out; /* Scaled down */
+    position: absolute;
+    opacity: 0;
+    transform: scale(0.4) translateX(-120%); /* Scaled down */
+    z-index: 0;
+    background-repeat: no-repeat;
+}
+
+.comment-box {
+    position: absolute;
+    transition: all 0.4s ease-in-out; /* Scaled down */
+    opacity: 0;
+    transform: scale(0.4); /* Scaled down */
+    z-index: 0;
+    padding: 16px; /* Scaled down */
+    background-color: #fff;
+    border-radius: 8px; /* Scaled down */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Scaled down */
+    overflow: hidden;
+}
+
+.review.center {
+    opacity: 1;
+    transform: scale(1) translateX(0); /* No change */
+    z-index: 3;
+    transition: all 0.24s ease-in-out; /* Scaled down */
+    position: relative;
+}
+
+.review.center:hover {
+    width: 450px; /* Scaled down */
+    height: 380px; /* Scaled down */
+    z-index: 5;
+    transform: scale(1.2) translateX(0); /* No change */
+    transition: all 0.4s ease-in-out; /* Scaled down */
+}
+
+.review.left,
+.comment-box.left {
+    opacity: 0.6;
+    transform: scale(0.64) translateX(144%); /* Scaled down */
+    z-index: 2;
+}
+
+.review.right,
+.comment-box.right {
+    opacity: 0.6;
+    transform: scale(0.64) translateX(-144%); /* Scaled down */
+    z-index: 2;
+}
+
+.review.hidden,
+.comment-box.hidden {
+    opacity: 0;
+    transform: scale(0.4) translateX(-240%); /* Scaled down */
+    z-index: 0;
+}
+
+.comments-slider {
+    height: 120px; /* Scaled down */
+    position: relative;
+    z-index: 1;
+}
+
+.comment-box.center {
+    opacity: 1;
+    transform: scale(1) translateX(0); /* No change */
+    z-index: 4;
+}
+
+.arrows {
+    display: flex;
+    justify-content: center;
+    gap: 8px; /* Scaled down */
+}
+
+.arrows button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 8px 16px; /* Scaled down */
+    border-radius: 4px; /* Scaled down */
+    font-size: 0.8rem; /* Scaled down */
+    cursor: pointer;
+    transition: background-color 0.24s; /* Scaled down */
+}
+
+.arrows button:hover {
+    background-color: #555;
+}

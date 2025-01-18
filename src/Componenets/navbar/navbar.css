@@ -1,8 +1,8 @@
 .navbar {
-    height: 5vw;
+    height: 5.12vw; /* Scaled down */
     width: 100vw;
     margin: 0 auto;
-    padding: 1rem 2rem;
+    padding: 0.8rem 1.6rem; /* Scaled down */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -16,7 +16,7 @@
     font-weight: 400;
     font-style: normal;
     transition: transform 0.3s ease-in-out;
-    box-shadow: rgba(0, 0, 0, 0.247) 0rem 0.5rem 2em;
+    box-shadow: rgba(0, 0, 0, 0.247) 0 0.4rem 1.6em; /* Scaled down */
 }
 
 .navVisible {
@@ -30,8 +30,9 @@
 .logoTxt {
     font-family: "BIZ UDPGothic", sans-serif;
     font-weight: 700;
-    font-size: 3vw;
+    font-size: 2.4vw; /* Scaled down */
     color: black;
+    text-shadow: 0.08rem 0.08rem 0.32rem rgba(0, 0, 0, 0.26); /* Scaled down */
 }
 
 .logoTxt:hover {
@@ -40,18 +41,24 @@
 
 .menuIcon {
     object-fit: cover;
-    height: 2.7vw;
+    height: 2.16vw; /* Scaled down */
     cursor: pointer;
+    position: absolute;
+    right: 1.6rem; /* Scaled down */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
 }
 
 .menuIcon2 {
     object-fit: cover;
-    height: 2.7vw;
+    height: 2.16vw; /* Scaled down */
     cursor: pointer;
-}
-
-.menuimgsection {
-    margin-right: 2rem;
+    position: absolute;
+    right: 1.6rem; /* Scaled down */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
 }
 
 .pageLinks {
@@ -61,6 +68,7 @@
     flex-direction: column;
     position: fixed;
     align-items: center;
+    justify-content: center;
     top: 0;
     left: 0;
     background-color: rgb(84, 84, 84);
@@ -69,21 +77,22 @@
     font-weight: 400;
     font-style: normal;
     transition: transform 0.3s ease-in-out;
-    box-shadow: rgba(0, 0, 0, 0.247) 0rem 0.5rem 2em;
-    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.247) 0rem 0.4rem 1.6em; /* Scaled down */
+    padding: 0.8rem; /* Scaled down */
+    text-align: center;
 }
 
 .linkSection {
     display: flex;
     flex-direction: column;
-    
     align-items: center;
+    justify-content: center;
 }
-  
+
 .pageLinksVisible {
     transform: translateY(0);
 }
-  
+
 .pageLinksHidden {
     transform: translateY(-100%);
 }
@@ -91,11 +100,12 @@
 .pageLink {
     font-family: "BIZ UDPGothic", sans-serif;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.2rem; /* Scaled down */
     cursor: pointer;
     transition: all 0.3s ease;
-    margin-bottom: 1.5rem;
-    padding: 1rem;
+    margin: 0 0.8rem 0 0; /* Scaled down */
+    padding: 0.8rem; /* Scaled down */
+    text-align: center;
 }
 
 .pageLink:hover {
@@ -106,25 +116,14 @@
 @media (min-width: 1025px) {
     .pageLinks {
         flex-direction: row;
-        justify-content: space-between;
-        height: 5vw;
+        justify-content: center;
+        height: auto;
     }
     .pageLink {
         margin-bottom: 0;
-        margin-right: 1.5rem;
-        
+        margin-right: 1.6rem; /* Scaled down */
     }
     .linkSection {
         flex-direction: row;
-        
     }
-    
 }
-
-
-
-
-
-
-
-

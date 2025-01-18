@@ -3,18 +3,10 @@
     color: black;
     margin: 0 1.5rem;
     border-radius: 3rem;
-    box-shadow: 0.2rem 0.2rem 3rem rgba(0, 0, 0, 0.719);
+
     padding: 1rem;
 }
 
-.servicesBGImg {
-    object-fit: contain;
-    overflow: hidden;
-    position: absolute;
-    opacity: 50%;
-    height: 40rem;
-    width: 100vw;
-}
 
 .servicesHead {
     padding-top: 1.5rem;
@@ -30,14 +22,14 @@
     width: fit-content;
     color: rgb(201, 238, 21);
     background-color: rgb(84, 84, 84);
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     font-family: "BIZ UDPGothic", sans-serif;
     text-shadow: 0.1rem 0.1rem 0.4rem rgba(0, 0, 0, 0.568);
 }
 
 .SValuImg {
     width: 100%;
-    max-width: 24.7rem;
+    max-width: 21.1rem;
 }
 
 .servicesHeadline, .servicesHeadline2 {
@@ -56,8 +48,8 @@
 }
 
 .service {
-    font-size: 1.5rem;
-    padding: 1.5rem 0;
+    font-size: 1.1rem;
+    padding: 2rem 0;
     font-family: "BIZ UDPGothic", sans-serif;
 }
 
@@ -65,11 +57,18 @@
     opacity: 0%;
     position: absolute;
     min-height: 4rem;
-    max-width: 25rem;
+    max-width: 24rem;
     border-radius: 0.5rem;
-    padding: 0.5rem 1rem 0.5rem 1rem; 
-    background-color: rgb(201, 238, 21);
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    background-color: rgb(244, 244, 244);
     box-shadow: 0.1rem 0.1rem 2rem rgba(134, 134, 134, 0.416);
+    transition: opacity 0.3s ease-in-out; /* Smooth fade-in effect */
+}
+
+.serviceInfo:hover {
+    opacity: 100%;
+    transition: opacity 0.2s ease-in-out; /* Smooth hover exit */
 }
 
 .serviceInfo:hover {
@@ -95,12 +94,12 @@
 
     .serviceLower {
         flex-direction: column;
-        
+
         padding: 1rem 0;
         padding-left: 3rem;
     }
 
-  
+
 
     .service {
         font-size: 1.5rem;
@@ -120,7 +119,7 @@
     }
 
     .SHeadTxt {
-        
+
         font-size: 0.75rem;
     }
 

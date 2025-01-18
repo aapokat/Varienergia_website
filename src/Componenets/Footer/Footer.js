@@ -9,7 +9,7 @@ import IgImg from '../Assets/images/IgImg.svg';
 
 const Footer = () => {
 
-    return ( 
+    return (
         <div className="footer">
             <div className="someRow">
                     <h3 className="someRowName">Väri Energia</h3>
@@ -17,7 +17,7 @@ const Footer = () => {
                         <p className="FollowTxt">Seuraa meitä:</p>
                         <a href="https://www.facebook.com/profile.php?id=61555843463010" target="_blank" rel="noopener noreferrer">
                             <img src={FbImg} alt="Instagram_Icon" className="SclsImg" />
-                            
+
                         </a>
                         <a href="https://www.instagram.com/varienergia?igsh=MTI5dDVyODR6cnppNw==" target="_blank" rel="noopener noreferrer">
                             <img src={IgImg} alt="Facebook_Icon" className="SclsImg" />
@@ -25,14 +25,14 @@ const Footer = () => {
                     </div>
                 </div>
             <div className="colorSection">
-                
+
                 <div className="pystyRivit">
                     <div className="frow">
                         <img src={greyLogo} alt="Logo" className="footerLogo" />
                         <p className="footerName">Väri Energia Oy</p>
                         <p className="footerAdrs">Höyhtykuja 17</p>
                         <p className="footerAdrs">90910 Kontio</p>
-                        
+
                     </div>
                     <div className="srow">
                         <p className="rowHead">Siirry Sivulla</p>
@@ -68,6 +68,16 @@ const Footer = () => {
                                 Toimintamme
                                 </Link>
                                 <Link
+                                    className="Link"
+                                    to="feedback-section"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-70}
+                                    duration={500}
+                                >
+                                    Kohteitamme
+                                </Link>
+                                <Link
                                 className="Link"
                                 to="contacts-section"
                                 spy={true}
@@ -81,7 +91,7 @@ const Footer = () => {
                     </div>
                     <div className="trow">
                         <p className="rowHead">Ota yhteyttä</p>
-                       
+
                     </div>
                 </div>
             </div>
@@ -94,5 +104,5 @@ const Footer = () => {
         </div>
      );
 };
- 
+
 export default Footer;
