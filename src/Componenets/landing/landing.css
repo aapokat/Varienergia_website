@@ -51,3 +51,42 @@
         font-size: 8vw;
     }
 }
+/* Responsive landing adjustments */
+@media (max-width: 768px) {
+    .landing {
+        height: calc(70vw + 6vw); /* Adjust landing height for tablets */
+        background-position: top center; /* Improve image visibility */
+    }
+
+    .overlayContent {
+        padding: 8vw 5vw; /* Adjust padding to center content */
+        left: 5vw; /* Center horizontally */
+    }
+
+    .overlayImg1 {
+        height: 40vw; /* Scale logo for tablet-sized devices */
+    }
+
+    .overlayTxt {
+        font-size: 7vw; /* Resize heading text */
+    }
+}
+
+@media (max-width: 480px) {
+    .landing {
+        height: calc(90vw + 8vw); /* Increase height for small screens */
+    }
+
+    .overlayContent {
+        left: 2.5vw; /* Bring content closer to the edges */
+        padding-top: 15vw; /* Extra padding for mobile */
+    }
+
+    .overlayImg1 {
+        height: 55vw; /* Further reduce logo size for mobile display */
+    }
+
+    .overlayTxt {
+        font-size: 9vw; /* Ensure text is readable but proportionate */
+    }
+}
