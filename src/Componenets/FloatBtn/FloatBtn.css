@@ -1,8 +1,8 @@
 /* Floating Button Container */
 .floatBtn {
     position: fixed;
-    bottom: 16px; /* Scaled down */
-    right: 16px; /* Scaled down */
+    bottom: 40px; /* Scaled down */
+    right: 40px; /* Scaled down */
     width: 4rem; /* Scaled down */
     height: 4rem; /* Scaled down */
     border-radius: 50%;

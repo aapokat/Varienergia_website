@@ -28,7 +28,7 @@ const Footer = () => {
 
                 <div className="pystyRivit">
                     <div className="frow">
-                        <img src={greyLogo} alt="Logo" className="footerLogo" />
+                        <img src={greyLogo} alt="Logo" className="footerLogo"/>
                         <p className="footerName">Väri Energia Oy</p>
                         <p className="footerAdrs">Höyhtykuja 17</p>
                         <p className="footerAdrs">90910 Kontio</p>
@@ -37,61 +37,69 @@ const Footer = () => {
                     <div className="srow">
                         <p className="rowHead">Siirry Sivulla</p>
                         <div className="footerNav">
-                                <Link
+                            <Link
                                 className="Link"
                                 to="landing-section"
                                 spy={true}
                                 smooth={true}
                                 offset={-70}
                                 duration={500}
-                                >
+                            >
                                 Alkuun
-                                </Link>
-                                <Link
+                            </Link>
+                            <Link
                                 className="Link"
                                 to="about-section"
                                 spy={true}
                                 smooth={true}
                                 offset={-70}
                                 duration={500}
-                                >
+                            >
                                 Tietoa meistä
-                                </Link>
-                                <Link
+                            </Link>
+                            <Link
                                 className="Link"
                                 to="services-section"
                                 spy={true}
                                 smooth={true}
                                 offset={-70}
                                 duration={500}
-                                >
+                            >
                                 Toimintamme
-                                </Link>
-                                <Link
-                                    className="Link"
-                                    to="feedback-section"
-                                    spy={true}
-                                    smooth={true}
-                                    offset={-70}
-                                    duration={500}
-                                >
-                                    Kohteitamme
-                                </Link>
-                                <Link
+                            </Link>
+                            <Link
+                                className="Link"
+                                to="feedback-section"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                            >
+                                Kohteitamme
+                            </Link>
+                            <Link
                                 className="Link"
                                 to="contacts-section"
                                 spy={true}
                                 smooth={true}
                                 offset={-70}
                                 duration={500}
-                                >
+                            >
                                 Yhteystiedot
-                                </Link>
-                            </div>
+                            </Link>
+                        </div>
                     </div>
-                    <div className="trow">
+                    <div className="3row">
                         <p className="rowHead">Ota yhteyttä</p>
-
+                        <a href="mailto:info@varienergia.fi" className="emailLink">
+                            info@varienergia.fi
+                        </a> <br/>
+                        <a href="mailto:Juho.Sallinen@varienergia.fi" className="emailLink">
+                            juho.sallinen@varienergia.fi
+                        </a> <br/>
+                        <a href="mailto:Teppo.Ahonen@varienergia.fi" className="emailLink">
+                            teppo.ahonen@varienergia.fi
+                        </a>
                     </div>
                 </div>
             </div>
@@ -100,9 +108,10 @@ const Footer = () => {
                 <RouterLink className="rightsTxt" to="/Kayttoehdot">Käyttöehdot</RouterLink>
                 <p className="rightsTxt">Verkkosivut Aapon Apu</p>
                 <p className="rightsTxt">Copyright © 2024 Väri Energia Oy</p>
+                <p className="rightsTxt">Y-tunnus 3432005-3</p>
             </div>
         </div>
-     );
+    );
 };
 
 export default Footer;

@@ -80,6 +80,12 @@ p {
     text-underline-offset: 0.2rem; /* Scaled down */
 }
 
+.emailLink {
+    color: black;
+    font-family: "BIZ UDPGothic", sans-serif;
+    font-size: 0.9rem;
+}
+
 .rights {
     display: flex;
     justify-content: space-between;

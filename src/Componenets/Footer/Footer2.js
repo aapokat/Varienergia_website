@@ -41,6 +41,15 @@ const Footer2 = () => {
                     </div>
                     <div className="3row">
                         <p className="rowHead">Ota yhteyttä</p>
+                        <a href="mailto:info@varienergia.fi" className="emailLink">
+                            info@varienergia.fi
+                        </a> <br/>
+                        <a href="mailto:Juho.Sallinen@varienergia.fi" className="emailLink">
+                            juho.sallinen@varienergia.fi
+                        </a> <br/>
+                        <a href="mailto:Teppo.Ahonen@varienergia.fi" className="emailLink">
+                            teppo.ahonen@varienergia.fi
+                        </a>
                     </div>
                 </div>
             </div>
@@ -49,6 +58,7 @@ const Footer2 = () => {
                 <RouterLink className="rightsTxt" to="/Kayttoehdot">Käyttöehdot</RouterLink>
                 <p className="rightsTxt">Verkkosivut Aapon Apu</p>
                 <p className="rightsTxt">Copyright © 2024 Väri Energia Oy</p>
+                <p className="rightsTxt">Y-tunnus 3432005-3</p>
             </div>
         </div>
     );
