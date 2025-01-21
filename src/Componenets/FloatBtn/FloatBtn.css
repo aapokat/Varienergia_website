@@ -11,7 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 3.2px 6.4px rgba(0, 0, 0, 0.3); /* Scaled down */
+    box-shadow: 0 3.2px 6.4px rgba(0, 0, 0, 0.3); /* Scaled down */
     z-index: 1000; /* Keep a high layer */
 }
 
@@ -30,7 +30,7 @@
     height: 28rem; /* Scaled down */
     background: #fff;
     border-radius: 8px; /* Scaled down */
-    box-shadow: 0px 3.2px 6.4px rgba(0, 0, 0, 0.3); /* Scaled down */
+    box-shadow: 0 3.2px 6.4px rgba(0, 0, 0, 0.3); /* Scaled down */
     display: flex;
     flex-direction: column;
     z-index: 1050; /* Higher than the floating button */
@@ -142,3 +142,19 @@
 .sendButton:hover {
     background-color: rgb(162, 189, 18);
 }
+
+@media (max-width: 420px) {
+    .floatBtn {
+        width: 3.5rem; /* Scaled down */
+        height: 3.5rem; /* Scaled down */
+    }
+
+}
+
+@media (max-width: 380px) {
+    .chatBotWindow {
+        width: 16rem; /* Scaled down */
+        height: 24rem; /* Scaled down */
+    }
+}
+

@@ -5,7 +5,7 @@ import juhoKuva from '../Assets/images/JuhoKuva.jpg';
 import valuGImg from '../Assets/images/valu.png';
 
 const Contacts = () => {
-    return ( 
+    return (
         <div className="contacts" id="contacts-section">
             <div className="CHead">
                 <h1 className="contactsHeadline">Yhteystiedot</h1>
@@ -20,7 +20,6 @@ const Contacts = () => {
                         <p className="phone">046 689 4259</p>
                     </div>
                 </div>
-                <div className="middleLine"></div>
                 <div className="juhoSctn contactCard">
                     <img src={juhoKuva} alt="Contact_Img" className="contactImg" />
                     <div className="NameSctn">

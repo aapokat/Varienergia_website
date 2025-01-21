@@ -1,6 +1,7 @@
 .footer {
     font-family: "BIZ UDPGothic", sans-serif;
     color: black;
+    overflow: hidden;
 }
 
 p {
@@ -89,7 +90,7 @@ p {
 .rights {
     display: flex;
     justify-content: space-between;
-    padding: 0.8rem 2.4rem; /* Scaled down */
+    padding: 0.5rem 2.4rem; /* Scaled down */
     background-color: rgba(202, 238, 21, 0.692);
     font-family: "BIZ UDPGothic", sans-serif;
     font-size: 0.9rem; /* Scaled down */
@@ -98,9 +99,11 @@ p {
 .rightsTxt {
     color: black;
     font-size: 0.9rem; /* Scaled down */
+    padding: 0.5rem 1rem;
+    font-family: "BIZ UDPGothic", sans-serif;
 }
 
-@media only screen and (max-width: 630px) {
+@media only screen and (max-width: 825px) {
     .someRow {
         flex-direction: column;
         align-items: center;
@@ -128,11 +131,35 @@ p {
 
     .frow {
         margin-bottom: 1rem; /* Scaled down */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .footerNav {
         margin-bottom: 1rem; /* Scaled down */
+        display: flex;
+    }
+    .Link {
+        margin: 0.5rem 2rem;
     }
     .srow {
         margin-left: 0;
+        text-align: center;
+    }
+    .row3 {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 670px) {
+    .footerNav {
+        margin-bottom: 1rem; /* Scaled down */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Link {
+        margin: 0.2rem 0;
     }
 }

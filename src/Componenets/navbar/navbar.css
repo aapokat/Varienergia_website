@@ -58,11 +58,11 @@
     right: 1.6rem; /* Scaled down */
     top: 50%;
     transform: translateY(-50%);
-    z-index: 1;
+    z-index: 3;
 }
 
 .pageLinks {
-    height: 5.12vw !important;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -77,26 +77,27 @@
     font-weight: 400;
     font-style: normal;
     transition: transform 0.3s ease-in-out;
-    box-shadow: rgba(0, 0, 0, 0.247) 0rem 0.4rem 1.6em; /* Scaled down */
+    box-shadow: rgba(0, 0, 0, 0.247) 0 0.4rem 1.6em; /* Scaled down */
     padding: 0.8rem; /* Scaled down */
     text-align: center;
 }
 
 .linkSection {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin: 0.5rem 0;
 }
 
 .pageLinksVisible {
     transform: translateY(0);
     height: auto;
+    z-index: 3;
 }
 
 .pageLinksHidden {
     transform: translateY(-100%);
-    height: 0;
 }
 
 .pageLink {
@@ -114,82 +115,47 @@
     color: rgb(203, 203, 203);
     text-decoration-line: underline;
 }
-
-@media (min-width: 1025px) {
-    .pageLinks {
-        flex-direction: row;
-        justify-content: center;
-        height: auto;
-    }
+@media (max-width: 1025px) {
     .pageLink {
-        margin-bottom: 0;
-        margin-right: 1.6rem; /* Scaled down */
-    }
-    .linkSection {
-        flex-direction: row;
+        font-size: 0.9rem; /* Scale up links for touch readability */
+        margin-right: 1rem; /* Add spacing between links */
     }
 }
-
 /* Adjust navbar for smaller devices */
 @media (max-width: 768px) {
     .navbar {
-        height: 12vw; /* Slightly larger height for touch gestures */
-        padding: 0.8rem 1rem; /* Adjust padding for smaller screens */
-        background-color: #c9ee15; /* Ensure visibility for mobile */
+        height: auto;
     }
 
-    .logoTxt {
-        font-size: 4.5vw; /* Reduce logo text size for smaller screens */
-    }
-
-    .menuIcon {
-        height: 6vw; /* Make toggle menu icon slightly larger */
-        right: 1rem;
-        z-index: 1;
-    }
-
-    .menuIcon2 {
-        height: 6vw; /* Adjust size of the toggle-close icon */
-    }
-
-    .pageLinks {
-        height: 100vh; /* Mobile menu covers entire height */
-        width: 100%; /* Full width for simplicity on small devices */
-        align-items: center;
-        justify-content: flex-start;
-        flex-direction: column; /* Stack links */
-        z-index: 2;
-    }
-
-    .pageLink {
-        font-size: 1.6rem; /* Scale up links for touch readability */
-        padding: 1rem 0; /* Add spacing between links */
-    }
-
-    /* Hide non-essential shadows on small screens */
-    .navbar,
-    .pageLinks {
-        box-shadow: none;
+    .linkSection {
+        flex-direction: column;
     }
 }
 
 @media (max-width: 480px) {
     .navbar {
-        height: 14vw; /* Increase navbar height for usability */
-        padding: 1rem;
+        height: 5vw;
     }
 
     .logoTxt {
-        font-size: 6vw; /* Slightly larger for better readability */
+        font-size: 1rem;
     }
 
-    .pageLinks {
-        justify-content: center;
-        padding: 2rem 0; /* Add more space for comfortable navigation */
+    .linkSection {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 350px) {
+    .navbar {
+        height: 0.8rem;
     }
 
-    .pageLink {
-        font-size: 1.8rem; /* Scale up for very small screens */
-        padding: 1.2rem 0;
+    .logoTxt {
+        font-size: 0.8rem;
+    }
+
+    .linkSection {
+        flex-direction: column;
     }
 }

@@ -1,18 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.b855431c.css",
-    "main.js": "/static/js/main.012f6a16.js",
+    "main.css": "/static/css/main.8aa40b5b.css",
+    "main.js": "/static/js/main.c54358d2.js",
     "static/media/TelineKuvaRoiske.png": "/static/media/TelineKuvaRoiske.f87a7a38bd805889b86a.png",
     "static/media/MaaliPensseli2.0.png": "/static/media/MaaliPensseli2.0.20e5d7375d455a8e974d.png",
+    "static/media/ref4e.jpg": "/static/media/ref4e.9d76b957377c99f05bb9.jpg",
     "static/media/IkkunaKuva1.0.png": "/static/media/IkkunaKuva1.0.417743f30a98e238b77b.png",
-    "static/media/Talo1.jpg": "/static/media/Talo1.53a08a002c2352418586.jpg",
-    "static/media/Talo3.jpg": "/static/media/Talo3.60d3db2e674842d07058.jpg",
-    "static/media/Talo2.jpg": "/static/media/Talo2.dae72ad2ecac7970364e.jpg",
+    "static/media/ref4j.jpg": "/static/media/ref4j.563357703e0e71f6522f.jpg",
+    "static/media/ref2e.jpg": "/static/media/ref2e.4a2ebb2afdeae2148f25.jpg",
+    "static/media/ref1e.jpg": "/static/media/ref1e.31e01367a0c2c5f6dbfe.jpg",
+    "static/media/ref9e.jpg": "/static/media/ref9e.c9b38231363d40989e6b.jpg",
+    "static/media/ref6e.jpg": "/static/media/ref6e.3feda6fbf26dd8e80546.jpg",
+    "static/media/ref2j.jpg": "/static/media/ref2j.0c1953e01db561845e1e.jpg",
+    "static/media/ref6j.jpg": "/static/media/ref6j.eaadbddc083409d463f5.jpg",
+    "static/media/ref8e.jpg": "/static/media/ref8e.c9fb34ab7283561e1abd.jpg",
+    "static/media/ref1j.jpg": "/static/media/ref1j.ab61002deb0abfc9b27c.jpg",
+    "static/media/ref5j.jpg": "/static/media/ref5j.e1666f6e385f3a8d1391.jpg",
+    "static/media/ref9j.jpg": "/static/media/ref9j.fcecee69585024166b92.jpg",
+    "static/media/ref5e.jpg": "/static/media/ref5e.abda0bf294619d2cbc8e.jpg",
+    "static/media/ref3e.jpg": "/static/media/ref3e.62ccbd2ab4e664a9e0d5.jpg",
+    "static/media/ref7e.jpg": "/static/media/ref7e.5a2a5582358c040d1e33.jpg",
     "static/media/JuhoJaTeppoRoiske.png": "/static/media/JuhoJaTeppoRoiske.87d14e359c505d239d6a.png",
-    "static/media/Talli2.jpg": "/static/media/Talli2.2b1c6e7a0152a85b442e.jpg",
-    "static/media/Talli1.jpg": "/static/media/Talli1.904fdde560d480a748ec.jpg",
+    "static/media/ref3j.jpg": "/static/media/ref3j.e4c8b216c92a3ad839ae.jpg",
+    "static/media/ref7j.jpg": "/static/media/ref7j.3e7b3c2fe76b09446d4f.jpg",
     "static/media/AloitusKuva2.jpg": "/static/media/AloitusKuva2.645819bab95b0be22862.jpg",
-    "static/media/Talli3.jpg": "/static/media/Talli3.56f7c0a9d88ab980e65f.jpg",
+    "static/media/ref8j.jpg": "/static/media/ref8j.930fc5329d68c2e4a583.jpg",
     "static/media/WhiteImgLogo.png": "/static/media/WhiteImgLogo.e71b5c7a26a1f75e6598.png",
     "static/media/MaaliPensseli1.0.jpg": "/static/media/MaaliPensseli1.0.a001381023363f16e478.jpg",
     "static/media/JuhoKuva.jpg": "/static/media/JuhoKuva.c5b90bbf50efaa7541fd.jpg",
@@ -30,11 +42,11 @@
     "static/media/PohjaImg.svg": "/static/media/PohjaImg.e6bfdcd8cbba5294181a86a1ea534778.svg",
     "static/media/SkrapImg.svg": "/static/media/SkrapImg.155c16ab1a06df30f3cc188461107530.svg",
     "index.html": "/index.html",
-    "main.b855431c.css.map": "/static/css/main.b855431c.css.map",
-    "main.012f6a16.js.map": "/static/js/main.012f6a16.js.map"
+    "main.8aa40b5b.css.map": "/static/css/main.8aa40b5b.css.map",
+    "main.c54358d2.js.map": "/static/js/main.c54358d2.js.map"
   },
   "entrypoints": [
-    "static/css/main.b855431c.css",
-    "static/js/main.012f6a16.js"
+    "static/css/main.8aa40b5b.css",
+    "static/js/main.c54358d2.js"
   ]
 }

@@ -9,7 +9,6 @@ import Services from "../../Componenets/Services/Services";
 import Feedback from '../../Componenets/Feedback/Feedback';
 import Contacts from '../../Componenets/Contacts/Contacts';
 import Footer from '../../Componenets/Footer/Footer';
-import FormComponent from "../../Componenets/Testi_kysl/FormComponent";
 
 const Home = () => {
   const location = useLocation();

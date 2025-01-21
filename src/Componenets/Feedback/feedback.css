@@ -17,7 +17,8 @@
 }
 
 .comments-headline {
-    display: none; /* TÄMÄ POIS KOKONAAN */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     font-family: "BIZ UDPGothic", sans-serif;
     text-shadow: 0.08rem 0.08rem 0.32rem rgba(0, 0, 0, 0.26); /* Scaled down */
     text-decoration: underline rgb(201, 238, 21);
@@ -35,14 +36,14 @@
     overflow: visible;
 }
 .comments-slider {
-    display: none; /* FLEX */
+    display: flex; /* FLEX */
     justify-content: center;
     align-items: center;
     gap: 24px; /* Scaled down */
     position: relative;
     width: 100%;
     height: 336px; /* Scaled down */
-    overflow: visible;
+    overflow: hidden;
 }
 
 .review {
@@ -60,6 +61,10 @@
     background-repeat: no-repeat;
 }
 
+.comment {
+    font-size: 0.9rem;
+}
+
 .comment-box {
     position: absolute;
     transition: all 0.4s ease-in-out; /* Scaled down */
@@ -71,6 +76,7 @@
     border-radius: 8px; /* Scaled down */
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Scaled down */
     overflow: hidden;
+    max-width: 25rem;
 }
 
 .review.center {
@@ -82,9 +88,9 @@
 }
 
 .review.center:hover {
-    width: 450px; /* Scaled down */
-    height: 380px; /* Scaled down */
-    z-index: 5;
+    width: 53vw; /* Scaled down */
+    height: 26rem; /* Scaled down */
+    z-index: 900;
     transform: scale(1.2) translateX(0); /* No change */
     transition: all 0.4s ease-in-out; /* Scaled down */
 }
@@ -139,6 +145,38 @@
     transition: background-color 0.24s; /* Scaled down */
 }
 
+#comment-arrows {
+    margin-top: 1rem;
+}
+
 .arrows button:hover {
     background-color: #555;
+}
+
+@media (max-width: 768px) {
+    .review.center:hover {
+        width: 65vw; /* Slightly wider for medium screens */
+        height: 22rem; /* Proportional height adjustment */
+        transform: scale(1.15) translateX(0); /* Slightly smaller scaling */
+    }
+}
+
+@media (max-width: 430px) {
+    .review.center:hover {
+        width: 80vw; /* Almost full width for smaller screens */
+        height: 20rem; /* Adjust height for smaller devices */
+        transform: scale(1.1) translateX(0); /* Reduce the scale further */
+    }
+    .feedbackHeadline, .comments-headline {
+        font-size: 1.3rem; /* Scaled down */
+    }
+}
+
+@media (max-width: 400px) {
+    .comment {
+        font-size: 0.75rem;
+    }
+    .comments-slider {
+        height: 38vw;
+    }
 }
