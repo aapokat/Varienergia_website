@@ -6,6 +6,10 @@
     background-position: 45vw; /* Scaled down */
 }
 
+.helpText {
+    display: none;
+}
+
 .firstSection {
     padding-top: 1.6rem; /* Scaled down */
     text-align: center;
@@ -171,6 +175,13 @@
     .aboutHeadline {
         font-size: 1.4rem; /* Slightly smaller headline */
         margin-bottom: 1rem;
+    }
+
+    .helpText {
+        display: block;
+        font-size: 2.5vw;
+        text-align: center;
+        font-family: "BIZ UDPGothic", sans-serif;
     }
 
     .aboutTxt {
@@ -357,8 +368,8 @@
 
     .infoTxt1, .infoTxt2, .infoTxt3 {
         font-size: 0.75rem; /* Make font size even smaller */
-        height: 8rem;
-        width: 8rem;
+        height: 9.5rem;
+        width: 9.5rem;
         border-radius: 8rem; /* Proportional radius */
     }
 

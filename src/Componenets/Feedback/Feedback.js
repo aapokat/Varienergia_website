@@ -1,5 +1,5 @@
 import './feedback.css';
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import image7 from '../Assets/images/referenssi/ref1e.jpg';
 import image8 from '../Assets/images/referenssi/ref2e.jpg';
 import image9 from '../Assets/images/referenssi/ref3e.jpg';
@@ -105,14 +105,14 @@ const Feedback = () => {
     return (
         <div className="feedback" id="feedback-section">
             <h1 className="feedbackHeadline">Kohteitamme</h1>
-
+            <p className="helpText">Paina kuvasta suurentaaksesi</p>
             {/* Images Slider */}
             <div className="reviews-slider">
                 {pictures.map((picture, index) => (
                     <div
                         key={index}
                         className={`review ${getPosition(index, currentImageIndex, pictures.length)}`}
-                        style={{ backgroundImage: `url(${picture})` }}
+                        style={{backgroundImage: `url(${picture})`}}
                         onMouseEnter={index === currentImageIndex ? handleMouseEnter : null}
                         onMouseLeave={index === currentImageIndex ? handleMouseLeave : null}
                     ></div>
@@ -129,7 +129,8 @@ const Feedback = () => {
             <h2 className="comments-headline">Asiakaskokemukset</h2>
             <div className="comments-slider">
                 {comments.map((comment, index) => (
-                    <div key={index} className={`comment-box ${getPosition(index, currentCommentIndex, comments.length)}`}>
+                    <div key={index}
+                         className={`comment-box ${getPosition(index, currentCommentIndex, comments.length)}`}>
                         <p className="comment">{comment}</p>
                     </div>
                 ))}

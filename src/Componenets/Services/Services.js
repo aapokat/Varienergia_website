@@ -9,16 +9,17 @@ import icon5 from '../Assets/images/PintImg.svg';
 import icon6 from '../Assets/images/CheckImg.svg';
 
 const Services = () => {
-    return (  
+    return (
         <div className="services" id="services-section">
             <div className="servicesHead">
                 <div className="SHeadTxt">
                     <h1 id="SheadTxt" className="servicesHeadline">Miten toimimme</h1>
                     <h2 id="SheadTxt" className="servicesHeadline2">Työnvaiheet:</h2>
                 </div>
-                <img src={headImg} alt="ValuTausta" className="SValuImg" />
+                <img src={headImg} alt="ValuTausta" className="SValuImg"/>
+                <p className="helpText">Vinkki! Paina otsikoista</p>
             </div>
-            
+
             <div className="serviceLower">
                 <div className="serviceParts">
                     <div className="serviceLine">
@@ -58,5 +59,5 @@ const Services = () => {
         </div>
     );
 }
- 
+
 export default Services;

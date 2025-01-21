@@ -28,7 +28,7 @@ const About = () => {
                 <div className="chooseSection">
                             <div className="aboutHead">
                                 <h1 className="aboutHeadline">Valitse meidät</h1>
-
+                                <p className="helpText">Vinkki! Paina otsikoista</p>
                             </div>
                             <div className="infoSection">
                                 <div className="infoWindow">
