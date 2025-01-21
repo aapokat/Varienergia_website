@@ -39,7 +39,7 @@ const Footer2 = () => {
                             <RouterLink className="Link" to="/#contacts-section">Yhteystiedot</RouterLink>
                         </div>
                     </div>
-                    <div className="3row">
+                    <div className="row3">
                         <p className="rowHead">Ota yhteyttä</p>
                         <a href="mailto:info@varienergia.fi" className="emailLink">
                             info@varienergia.fi

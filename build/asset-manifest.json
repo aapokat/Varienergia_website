@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2184210c.css",
-    "main.js": "/static/js/main.ba5d31ae.js",
+    "main.js": "/static/js/main.9e4e603b.js",
     "static/media/TelineKuvaRoiske.png": "/static/media/TelineKuvaRoiske.f87a7a38bd805889b86a.png",
     "static/media/MaaliPensseli2.0.png": "/static/media/MaaliPensseli2.0.20e5d7375d455a8e974d.png",
     "static/media/ref4e.jpg": "/static/media/ref4e.9d76b957377c99f05bb9.jpg",
@@ -43,10 +43,10 @@
     "static/media/SkrapImg.svg": "/static/media/SkrapImg.155c16ab1a06df30f3cc188461107530.svg",
     "index.html": "/index.html",
     "main.2184210c.css.map": "/static/css/main.2184210c.css.map",
-    "main.ba5d31ae.js.map": "/static/js/main.ba5d31ae.js.map"
+    "main.9e4e603b.js.map": "/static/js/main.9e4e603b.js.map"
   },
   "entrypoints": [
     "static/css/main.2184210c.css",
-    "static/js/main.ba5d31ae.js"
+    "static/js/main.9e4e603b.js"
   ]
 }

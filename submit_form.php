@@ -42,14 +42,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($conn->query($sql) === TRUE) {
         // Prepare email
-        $to = "aapo.katajala@gmail.com"; // Replace with your email address
-        $subject = "$name\n Yhteydenotto pyyntö";
+        $to = "juho.sallinen@varienergia.fi, teppo.ahonen@varienergia.fi"; // Replace with your email address
+        $subject = "$name\n Yhteydenottopyyntö";
+        $body = "Tämä viesti on automaatti viesti värienergia.fi yhteydenottolomakkeesta\n";
         $body = "Olet saanut uuden yhteydenoton/tarjous pyynnön:\n\n";
         $body .= "Nimi: $name\n";
         $body .= "Puhelinnumero: $phone\n";
         $body .= "Sähköposti: $email\n";
         $body .= "Viesti: $message\n";
-        $headers = "From: aapo.katajala@gmail.com"; // Replace with a valid "From" address
+        $headers = "From: info@varienergia.fi"; // Replace with a valid "From" address
 
         // Send email
         if (mail($to, $subject, $body, $headers)) {
